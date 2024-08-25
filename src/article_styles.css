@@ -1,0 +1,32 @@
+:root {
+    /* Color Theme Swatches in Hex */
+    --stone: #807770;
+    --orange: #ffc494;
+    --cream: #ffeee0;
+    --wood: #80624a;
+    --gray: #ccbfb4;
+    --opensans: "Open Sans", sans-serif;
+}
+
+.back {
+    font-weight: 100;
+    font-size: 1rem;
+    margin: 2rem 0;
+    text-decoration: underline;
+}
+
+.back:hover {
+    color: var(--stone);
+}
+
+.greeting {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 1rem 0;
+}
+
+.date,
+.reading_time {
+    font-weight: normal;
+    font-size: 0.8rem;
+}
