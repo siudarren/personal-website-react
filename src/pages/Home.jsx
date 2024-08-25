@@ -44,9 +44,7 @@ function Home() {
                     <ul>
                         <li>
                             <p>
-                                <Link
-                                    to="/article/A-Quick-Guide-to-Quantum-Walk-Interpolated-Walk-and-Fast-forwarding-Algorithm"
-                                    className="project_title">
+                                <Link to="/article/A-Quick-Guide-to-Quantum-Walk-Interpolated-Walk-and-Fast-forwarding-Algorithm">
                                     A Quick Guide to Quantum Walk, Interpolated
                                     Walk, and Fast-forwarding Algorithm
                                 </Link>
