@@ -69,7 +69,7 @@ function Home() {
                         <a
                             href="https://www.linkedin.com/in/darren-siu-09256617b"
                             target="_blank">
-                            <i className="fa-brands fa-linkedin"></i>
+                            <i className="fa-brands fa-linkedin">&nbsp;</i>
                         </a>
                         <a href="https://github.com/siudarren" target="_blank">
                             <i className="fa-brands fa-square-github"></i>
