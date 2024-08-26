@@ -7,7 +7,7 @@ function Article({slug}) {
 
     useEffect(() => {
         const loadArticle = async () => {
-            console.log("Slug:", slug);
+            // console.log("Slug:", slug);
 
             if (!slug) {
                 setError("No slug provided");
@@ -23,7 +23,7 @@ function Article({slug}) {
                 }
 
                 const text = await response.text();
-                console.log("Loaded HTML content:", text.substring(0, 200)); // Logs first 200 chars of the HTML content
+                // console.log("Loaded HTML content:", text.substring(0, 200)); // Logs first 200 chars of the HTML content
 
                 setContent(text);
             } catch (err) {
@@ -41,12 +41,13 @@ function Article({slug}) {
 
     return (
         <div>
-            <h3>
-                <Link to="/articles" className="back">
-                    back to articles
-                </Link>
+            <h3 className="back">
+                <Link to="/articles">back to articles</Link>
             </h3>
             <div dangerouslySetInnerHTML={{__html: content}}></div>
+            <h3 className="back end_back">
+                <Link to="/articles">back to articles</Link>
+            </h3>
         </div>
     );
 }
