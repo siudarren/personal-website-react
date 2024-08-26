@@ -19,7 +19,7 @@
     color: var(--stone);
 }
 
-.greeting {
+.article_title {
     font-size: 1.5rem;
     font-weight: normal;
     margin: 1rem 0;

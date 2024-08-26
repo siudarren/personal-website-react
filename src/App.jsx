@@ -1,6 +1,11 @@
 import React from "react";
 // import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    useParams,
+} from "react-router-dom";
 
 import Home from "/src/pages/Home";
 import Projects from "/src/pages/Projects";
@@ -8,6 +13,7 @@ import Articles from "/src/pages/Articles";
 import Article from "/src/components/Article";
 import Header from "/src/components/Header.jsx"; // Import Header
 import "/src/App.css";
+import "/src/article_styles.css";
 
 function App() {
     return (
@@ -33,6 +39,5 @@ function ArticleRouteWrapper() {
     const {slug} = useParams(); // Extract the slug from the URL
     return <Article slug={slug} />;
 }
-
 
 export default App;

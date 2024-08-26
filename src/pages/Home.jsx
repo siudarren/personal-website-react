@@ -45,13 +45,20 @@ function Home() {
                         <li>
                             <p>
                                 <Link
-                                    to="/article/A-Quick-Guide-to-Quantum-Walk-Interpolated-Walk-and-Fast-forwarding-Algorithm"
+                                    to={
+                                        "/article/A-Quick-Guide-to-Quantum-Walk-Interpolated-Walk-and-Fast-forwarding-Algorithm"
+                                    }
                                     className="project_title">
                                     A Quick Guide to Quantum Walk, Interpolated
                                     Walk, and Fast-forwarding Algorithm
                                 </Link>
                             </p>
                         </li>
+                        {/* <li>
+                            <p>
+                                <Link to={"/article/article-test"}>test</Link>
+                            </p>
+                        </li> */}
                     </ul>
 
                     <Link to="/articles" className="view_all">
