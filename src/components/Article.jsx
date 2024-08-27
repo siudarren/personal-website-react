@@ -47,17 +47,17 @@ function Article({slug}) {
     return (
         <div>
             {/* Link to navigate back to the articles list */}
-            <h3 className="back">
-                <Link to="/articles">back to articles</Link>
-            </h3>
+            <Link to="/articles">
+                <h3 className="back">back to articles</h3>
+            </Link>
 
             {/* Rendering HTML content directly from the state */}
             <div dangerouslySetInnerHTML={{__html: content}} />
 
             {/* Duplicate link for better user navigation */}
-            <h3 className="back end_back">
-                <Link to="/articles">back to articles</Link>
-            </h3>
+            <Link to="/articles">
+                <h3 className="back end_back">back to articles</h3>
+            </Link>
         </div>
     );
 }
