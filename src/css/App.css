@@ -1,20 +1,26 @@
 :root {
     /* Color Theme Swatches in Hex */
-    --stone: #807770;
-    --orange: #ffc494;
-    --cream: #ffeee0;
-    --wood: #80624a;
+    --border-color: #807770;
+    --button-color: #ffc494;
+    --background-color: #ffeee0;
+    --hover-color: #80624a;
+    --button-hover-color: #80624a;
     --gray: #ccbfb4;
+    --word-color: black;
+    --word-color2: black;
     --opensans: "Open Sans", sans-serif;
 }
 
 /* Dark theme */
 :root.dark-mode {
-    --stone: #ffeee0;
-    --orange: #ffc494;
-    --cream: #807770;
-    --wood: #80624a;
+    --border-color: #ffeee0;
+    --button-color: #ffc494;
+    --background-color: #121212;
+    --hover-color: #ffc494;
+    --button-hover-color: #80624a;
     --gray: #ccbfb4;
+    --word-color: rgb(160, 160, 160);
+    --word-color2: #ffc494;
     --opensans: "Open Sans", sans-serif;
 }
 
@@ -27,14 +33,14 @@ html {
 }
 
 body {
-    background-color: var(--cream);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0.5rem 4rem 0 4rem;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--word-color);
 }
 
 h1,
@@ -42,12 +48,14 @@ h2,
 h3 {
     margin: 0;
     font-family: var(--opensans);
+    color: var(--word-color);
 }
 
 .page_heading {
     font-size: 2rem;
     font-weight: bold;
     font-family: var(--opensans);
+    color: var(--word-color2);
     margin-bottom: 1rem;
     grid-column: 1/2;
 }
@@ -56,6 +64,7 @@ p {
     font-family: var(--opensans);
     font-size: 0.9rem;
     margin: 0;
+    color: var(--word-color);
 }
 
 .body {

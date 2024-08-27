@@ -11,8 +11,6 @@
     display: flex;
 }
 
-
-
 ul {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -28,7 +26,7 @@ li p {
 }
 
 .home_project_title:hover {
-    color: var(--wood);
+    color: var(--hover-color);
     /* text-decoration: underline; */
 }
 
@@ -40,34 +38,32 @@ li p {
 
 .icons,
 i:hover {
-    color: var(--wood);
+    color: var(--hover-color);
 }
 
 .hi {
-    color: var(--wood);
+    color: var(--hover-color);
     animation: color-cycle 8s infinite;
     /* filter:brightness(80%); */
 }
 
 .hi:hover {
-    color: var(--orange);
+    color: var(--button-color);
     animation: none;
 }
 
 @keyframes color-cycle {
     0% {
-        color: var(--wood);
+        color: var(--hover-color);
     }
     33% {
-        color: var(--orange);
+        color: var(--button-color);
     }
-    /* 40% { color: var(--gray); } */
     80% {
-        color: var(--stone);
+        color: var(--border-color);
     }
-    /* 80% { color: var(--wood); } */
     100% {
-        color: var(--wood);
+        color: var(--hover-color);
     }
 }
 
@@ -75,14 +71,14 @@ i:hover {
     font-family: var(--opensans);
     font-size: 0.8rem;
     margin: 0 auto;
-    background-color: var(--orange);
+    background-color: var(--button-color);
     border-radius: 5px;
     padding: 0.1rem 0.3rem;
+    color: black;
 }
 
 .view_all:hover {
-    background-color: var(--wood);
-    /* color: var(--cream); */
+    background-color: var(--button-hover-color);
 }
 
 .introduction_box {

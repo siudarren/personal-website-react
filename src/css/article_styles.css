@@ -1,13 +1,3 @@
-:root {
-    /* Color Theme Swatches in Hex */
-    --stone: #807770;
-    --orange: #ffc494;
-    --cream: #ffeee0;
-    --wood: #80624a;
-    --gray: #ccbfb4;
-    --opensans: "Open Sans", sans-serif;
-}
-
 .back {
     font-weight: 100;
     font-size: 1rem;
@@ -22,7 +12,7 @@
 }
 
 .back:hover {
-    color: var(--stone);
+    color: var(--border-color);
 }
 
 .article_title {
@@ -39,4 +29,8 @@
 
 .content p {
     margin: 1rem 0;
+}
+
+math {
+    color: var(--word-color);
 }
