@@ -1,11 +1,6 @@
 import React from "react";
 // import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    useParams,
-} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, useParams} from "react-router-dom";
 
 import Home from "/src/pages/Home"; // Import Home Page
 import Projects from "/src/pages/Projects"; // Import Projects Page
@@ -36,10 +31,7 @@ function App() {
 
                     {/* The route that takes user to specific article */}
                     {/* slug is the name of the article */}
-                    <Route
-                        path="/article/:slug"
-                        element={<ArticleRouteWrapper />}
-                    />
+                    <Route path="/article/:slug" element={<ArticleRouteWrapper />} />
                 </Routes>
             </div>
         </Router>

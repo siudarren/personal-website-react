@@ -28,7 +28,7 @@
 .article_title {
     font-size: 1.5rem;
     font-weight: normal;
-    margin: 1rem 0;
+    margin: 1rem 0 0 0 0;
 }
 
 .date,
@@ -37,7 +37,6 @@
     font-size: 0.8rem;
 }
 
-p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.content p {
+    margin: 1rem 0;
 }

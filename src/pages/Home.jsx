@@ -10,14 +10,10 @@ function Home() {
                 </h2>
                 <div className="introduction">
                     <p>
-                        I am currently studying at the{" "}
-                        <span className="highlight">UC Berkeley</span> and my
-                        academic passions lie in{" "}
-                        <span className="highlight">mathematics</span> and&nbsp;
-                        <span className="highlight">physics</span>.
-                        Additionally, I enjoy fencing,
-                        <span>coding</span>, and solving Rubik's Cube as side
-                        hobbies.
+                        I am currently studying at the <span className="highlight">UC Berkeley</span> and my academic
+                        passions lie in <span className="highlight">mathematics</span> and&nbsp;
+                        <span className="highlight">physics</span>. Additionally, I enjoy fencing,
+                        <span>coding</span>, and solving Rubik's Cube as side hobbies.
                     </p>
 
                     <h3 className="projects">Recent Projects:</h3>
@@ -28,8 +24,7 @@ function Home() {
                                     href="https://rubiks-cube-simulator-41497947629e.herokuapp.com/#"
                                     className="project_title"
                                     target="_blank">
-                                    A Rubik's Cube simulator designed to
-                                    facilitate learning speed cubing
+                                    A Rubik's Cube simulator designed to facilitate learning speed cubing
                                 </a>
                             </p>
                         </li>
@@ -48,8 +43,7 @@ function Home() {
                                         "/article/A-Quick-Guide-to-Quantum-Walk-Interpolated-Walk-and-Fast-forwarding-Algorithm"
                                     }
                                     className="project_title">
-                                    A Quick Guide to Quantum Walk, Interpolated
-                                    Walk, and Fast-forwarding Algorithm
+                                    A Quick Guide to Quantum Walk, Interpolated Walk, and Fast-forwarding Algorithm
                                 </Link>
                             </p>
                         </li>
@@ -57,11 +51,8 @@ function Home() {
                             <p>
                                 <Link
                                     className="project_title"
-                                    to={
-                                        "/article/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product"
-                                    }>
-                                    A Potentially Easier Way to Calculate the
-                                    Cross Product
+                                    to={"/article/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product"}>
+                                    A Potentially Easier Way to Calculate the Cross Product
                                 </Link>
                             </p>
                         </li>
@@ -72,9 +63,7 @@ function Home() {
                     </Link>
 
                     <div className="icons">
-                        <a
-                            href="https://www.linkedin.com/in/darren-siu-09256617b"
-                            target="_blank">
+                        <a href="https://www.linkedin.com/in/darren-siu-09256617b" target="_blank">
                             <i className="fa-brands fa-linkedin">&nbsp;</i>
                         </a>
                         <a href="https://github.com/siudarren" target="_blank">
