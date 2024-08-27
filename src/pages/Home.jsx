@@ -13,7 +13,7 @@ function Home() {
                         I am currently studying at the{" "}
                         <span className="highlight">UC Berkeley</span> and my
                         academic passions lie in{" "}
-                        <span className="highlight">mathematics</span> and
+                        <span className="highlight">mathematics</span> and&nbsp;
                         <span className="highlight">physics</span>.
                         Additionally, I enjoy fencing,
                         <span>coding</span>, and solving Rubik's Cube as side
@@ -24,14 +24,13 @@ function Home() {
                     <ul>
                         <li>
                             <p>
-                                A&nbsp;
                                 <a
                                     href="https://rubiks-cube-simulator-41497947629e.herokuapp.com/#"
                                     className="project_title"
                                     target="_blank">
-                                    Rubik's Cube simulator
-                                </a>{" "}
-                                designed to facilitate learning speed cubing
+                                    A Rubik's Cube simulator designed to
+                                    facilitate learning speed cubing
+                                </a>
                             </p>
                         </li>
                     </ul>
@@ -54,11 +53,18 @@ function Home() {
                                 </Link>
                             </p>
                         </li>
-                        {/* <li>
+                        <li>
                             <p>
-                                <Link to={"/article/article-test"}>test</Link>
+                                <Link
+                                    className="project_title"
+                                    to={
+                                        "/article/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product"
+                                    }>
+                                    A Potentially Easier Way to Calculate the
+                                    Cross Product
+                                </Link>
                             </p>
-                        </li> */}
+                        </li>
                     </ul>
 
                     <Link to="/articles" className="view_all">
