@@ -30,6 +30,12 @@
                 margin: 1rem;
             }
 
+            figcaption,
+            .ltx_listingline,
+            .ltx_tag {
+                color: var(--word-color);
+            }
+
             .ltx_figure {
                 display: flex;
                 flex-direction: column;
@@ -61,12 +67,17 @@
                 width: 100%;
             }
 
-            .ltx_equation {
+            tbody {
                 margin: 2rem auto;
             }
 
+            .ltx_equation {
+                display: flex;
+                align-items: center;
+            }
+
             .ltx_float_algorithm {
-                border: black 2px solid;
+                border: var(--word-color) 2px solid;
                 padding: 1rem;
                 border-radius: 5px;
                 display: flex;
@@ -637,7 +648,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(1)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(1)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -836,7 +847,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(2)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(2)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -888,7 +899,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(3)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(3)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -941,7 +952,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(4)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(4)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -1393,7 +1404,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(5)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(5)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -1453,16 +1464,15 @@
                                                                             ><mi>d</mi><mo stretchy="false">⟩</mo></mrow
                                                                         ></mrow
                                                                     ></mrow
-                                                                ><mo lspace="0em">.</mo></mrow
-                                                            ></math
-                                                        >
+                                                                ><mo lspace="0em"> </mo></mrow
+                                                        ></math>
                                                     </td>
                                                     <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
                                                     <td
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(6)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(6)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -1583,7 +1593,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(7)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(7)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -1713,16 +1723,15 @@
                                                                             ></mrow
                                                                         ></mrow
                                                                     ></mrow
-                                                                ><mo lspace="0em">.</mo></mrow
-                                                            ></math
-                                                        >
+                                                                ><mo lspace="0em"></mo></mrow
+                                                        ></math>
                                                     </td>
                                                     <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
                                                     <td
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(8)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(8)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -1924,16 +1933,15 @@
                                                                             ></mrow
                                                                         ></mrow
                                                                     ></mrow
-                                                                ><mo>,</mo></mrow
-                                                            ></math
-                                                        >
+                                                                ><mo></mo></mrow
+                                                        ></math>
                                                     </td>
                                                     <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
                                                     <td
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(9)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(9)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -2236,7 +2244,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(10)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(10)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -2328,7 +2336,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(11)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(11)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -2518,16 +2526,15 @@
                                                                             ><mo>)</mo></mrow
                                                                         ></mrow
                                                                     ></mrow
-                                                                ><mo>,</mo></mrow
-                                                            ></math
-                                                        >
+                                                                ><mo></mo></mrow
+                                                        ></math>
                                                     </td>
                                                     <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
                                                     <td
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(12)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(12)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -2592,16 +2599,15 @@
                                                                         ><mn>0</mn><mo>≤</mo><mi>s</mi><mo>≤</mo
                                                                         ><mn>1</mn></mrow
                                                                     ></mrow
-                                                                ><mo lspace="0em">.</mo></mrow
-                                                            ></math
-                                                        >
+                                                                ><mo lspace="0em"></mo></mrow
+                                                        ></math>
                                                     </td>
                                                     <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
                                                     <td
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(13)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(13)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -2810,7 +2816,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(14)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(14)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -2895,7 +2901,7 @@
                                                                             ><mtext mathsize="90%">EF</mtext></mrow
                                                                         ></mrow
                                                                     ></mrow
-                                                                ><mo lspace="0em">.</mo></mrow
+                                                                ><mo lspace="0em"></mo></mrow
                                                             ></math
                                                         >
                                                     </td>
@@ -2904,7 +2910,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(15)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(15)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -3030,7 +3036,7 @@
                                                                             ><mo>′</mo></msup
                                                                         ></mrow
                                                                     ></mrow
-                                                                ><mo>,</mo></mrow
+                                                                ><mo></mo></mrow
                                                             ></math
                                                         >
                                                     </td>
@@ -3039,7 +3045,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(16)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(16)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -3592,7 +3598,7 @@
                                                                             ></mrow
                                                                         ></mrow
                                                                     ></mrow
-                                                                ><mo>,</mo></mrow
+                                                                ><mo></mo></mrow
                                                             ></math
                                                         >
                                                     </td>
@@ -3601,7 +3607,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(17)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(17)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -3716,7 +3722,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(18)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(18)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -3788,7 +3794,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(19)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(19)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -3816,8 +3822,8 @@
                                                         version="1.1"
                                                         width="338.98">
                                                         <g
-                                                            fill="#000000"
-                                                            stroke="#000000"
+                                                            fill="var(--word-color)"
+                                                            stroke="var(--word-color)"
                                                             transform="translate(0,251.68) matrix(1 0 0 -1 0 0) translate(98.39,0) translate(0,31.22)">
                                                             <g stroke-width="0.8pt">
                                                                 <path d="M 0 0 L 0 195.87" style="fill: none"></path>
@@ -3833,8 +3839,8 @@
                                                                         style="fill: none"></path>
                                                                 </g>
                                                                 <g
-                                                                    fill="#000000"
-                                                                    stroke="#000000"
+                                                                    fill="var(--word-color)"
+                                                                    stroke="var(--word-color)"
                                                                     transform="matrix(1.0 0.0 0.0 1.0 -13.62 205.48)">
                                                                     <foreignObject
                                                                         height="13.84"
@@ -3868,8 +3874,8 @@
                                                                         style="fill: none"></path>
                                                                 </g>
                                                                 <g
-                                                                    fill="#000000"
-                                                                    stroke="#000000"
+                                                                    fill="var(--word-color)"
+                                                                    stroke="var(--word-color)"
                                                                     transform="matrix(1.0 0.0 0.0 1.0 202.02 -3.46)">
                                                                     <foreignObject
                                                                         height="13.84"
@@ -3897,8 +3903,8 @@
                                                                         d="M 0 78.74 L 177.17 78.74 L 177.17 0"
                                                                         style="fill: none"></path>
                                                                     <g
-                                                                        fill="#000000"
-                                                                        stroke="#000000"
+                                                                        fill="var(--word-color)"
+                                                                        stroke="var(--word-color)"
                                                                         transform="matrix(1.0 0.0 0.0 1.0 182.05 75.28)">
                                                                         <foreignObject
                                                                             height="13.84"
@@ -3930,8 +3936,8 @@
                                                                     </g>
                                                                 </g>
                                                                 <g
-                                                                    fill="#000000"
-                                                                    stroke="#000000"
+                                                                    fill="var(--word-color)"
+                                                                    stroke="var(--word-color)"
                                                                     transform="matrix(1.0 0.0 0.0 1.0 62.94 -23.14)">
                                                                     <foreignObject
                                                                         height="13.84"
@@ -3965,8 +3971,8 @@
                                                                     >
                                                                 </g>
                                                                 <g
-                                                                    fill="#000000"
-                                                                    stroke="#000000"
+                                                                    fill="var(--word-color)"
+                                                                    stroke="var(--word-color)"
                                                                     transform="matrix(1.0 0.0 0.0 1.0 -93.78 35.91)">
                                                                     <foreignObject
                                                                         height="13.84"
@@ -4121,8 +4127,8 @@
                                                                     d="M 39.37 0 C 39.37 5.75 38.11 11.43 35.68 16.64"
                                                                     style="fill: none"></path>
                                                                 <g
-                                                                    fill="#000000"
-                                                                    stroke="#000000"
+                                                                    fill="var(--word-color)"
+                                                                    stroke="var(--word-color)"
                                                                     transform="matrix(1.0 0.0 0.0 1.0 66.87 16.23)">
                                                                     <foreignObject
                                                                         height="13.84"
@@ -4499,7 +4505,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(20)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(20)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -4567,7 +4573,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(21)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(21)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -4964,16 +4970,15 @@
                                                                             ></mrow
                                                                         ></msqrt
                                                                     ></mrow
-                                                                ><mo>,</mo></mrow
-                                                            ></math
-                                                        >
+                                                                ><mo></mo></mrow
+                                                        ></math>
                                                     </td>
                                                     <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
                                                     <td
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(22)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(22)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -5057,16 +5062,15 @@
                                                                             ></mfrac
                                                                         ></mrow
                                                                     ></mrow
-                                                                ><mo>,</mo></mrow
-                                                            ></math
-                                                        >
+                                                                ><mo></mo></mrow
+                                                        ></math>
                                                     </td>
                                                     <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
                                                     <td
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(23)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(23)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -5357,7 +5361,7 @@
                                                                             ></mfrac
                                                                         ></mrow
                                                                     ></mrow
-                                                                ><mo>,</mo></mrow
+                                                                ><mo></mo></mrow
                                                             ></math
                                                         >
                                                     </td>
@@ -5366,7 +5370,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(24)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(24)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -5475,16 +5479,15 @@
                                                                             ></mrow
                                                                         ></mrow
                                                                     ></mrow
-                                                                ><mo>,</mo></mrow
-                                                            ></math
-                                                        >
+                                                                ><mo></mo></mrow
+                                                        ></math>
                                                     </td>
                                                     <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
                                                     <td
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(25)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(25)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -6079,7 +6082,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(26)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(26)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -6388,7 +6391,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(27)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(27)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -6442,16 +6445,15 @@
                                                                             ><mo>)</mo></mrow
                                                                         ><mi>k</mi></msup
                                                                     ></mrow
-                                                                ><mo>,</mo></mrow
-                                                            ></math
-                                                        >
+                                                                ><mo></mo></mrow
+                                                        ></math>
                                                     </td>
                                                     <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
                                                     <td
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(28)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(28)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -6498,16 +6500,15 @@
                                                                             ><mo>)</mo></mrow
                                                                         ><mi>k</mi></msup
                                                                     ></mrow
-                                                                ><mo lspace="0em">.</mo></mrow
-                                                            ></math
-                                                        >
+                                                                ><mo lspace="0em"></mo></mrow
+                                                        ></math>
                                                     </td>
                                                     <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
                                                     <td
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(29)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(29)</span
                                                         >
                                                     </td>
                                                 </tr>
@@ -6646,7 +6647,7 @@
                                                         rowspan="1"
                                                         class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right">
                                                         <span class="ltx_tag ltx_tag_equation ltx_align_right"
-                                                            >(30)</span
+                                                            >&nbsp;&nbsp;&nbsp;&nbsp;(30)</span
                                                         >
                                                     </td>
                                                 </tr>
