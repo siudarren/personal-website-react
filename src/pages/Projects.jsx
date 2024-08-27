@@ -1,10 +1,10 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import "/src/css/Article_and_Project.css";
 
 function Projects() {
     return (
         <div class="body">
-            <h2 class="greeting">Projects</h2>
+            <h2 class="page_heading">Projects</h2>
             <a href="https://rubiks-cube-simulator-41497947629e.herokuapp.com/#" target="_blank">
                 <div class="article-box">
                     <h3 class="article-title">Rubik's Cube simulator</h3>

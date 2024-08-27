@@ -1,0 +1,20 @@
+.article-box {
+    border: var(--stone) solid 2px;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.article-box:hover {
+    /* background-color: var(--gray); */
+    text-decoration: underline;
+}
+
+.article-title {
+    /* text-decoration: underline; */
+    margin-bottom: 0.5rem;
+}
+
+.article-preview {
+    font-size: 0.9rem;
+}

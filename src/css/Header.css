@@ -1,0 +1,81 @@
+:root {
+    /* Color Theme Swatches in Hex */
+    --stone: #807770;
+    --orange: #ffc494;
+    --cream: #ffeee0;
+    --wood: #80624a;
+    --gray: #ccbfb4;
+    --opensans: "Open Sans", sans-serif;
+}
+
+/* Dark theme */
+:root.dark-mode {
+    --stone: #ffeee0;
+    --orange: #ffc494;
+    --cream: #807770;
+    --wood: #80624a;
+    --gray: #ccbfb4;
+    --opensans: "Open Sans", sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    font-size: 1.5rem;
+    font-family: var(--opensans);
+    margin: 0 auto 0 0;
+}
+
+/* The switch - the container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide the default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/* The slider before it is toggled (left side of the switch) */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Toggle the background color when the checkbox is checked */
+input:checked + .slider {
+    background-color: var(--stone);
+}
+
+/* Move the slider to the right when the checkbox is checked */
+input:checked + .slider:before {
+    transform: translateX(26px);
+}

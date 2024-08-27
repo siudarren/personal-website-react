@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
-import "/src/article_styles.css"; // Importing CSS styles specific to the article component
+import "/src/css/article_styles.css"; // Importing CSS styles specific to the article component
 
 // Article component definition accepting 'slug' as a prop to load specific articles
 function Article({slug}) {

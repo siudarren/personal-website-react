@@ -1,11 +1,12 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import "/src/css/Home.css";
 
 function Home() {
     return (
         <main className="body">
             <section className="introduction_box">
-                <h2 className="greeting">
+                <h2 className="page_heading">
                     <span className="hi">Hi,</span> I'm Darren
                 </h2>
                 <div className="introduction">
@@ -22,7 +23,7 @@ function Home() {
                             <p>
                                 <a
                                     href="https://rubiks-cube-simulator-41497947629e.herokuapp.com/#"
-                                    className="project_title"
+                                    className="home_project_title"
                                     target="_blank">
                                     A Rubik's Cube simulator designed to facilitate learning speed cubing
                                 </a>
@@ -42,7 +43,7 @@ function Home() {
                                     to={
                                         "/article/A-Quick-Guide-to-Quantum-Walk-Interpolated-Walk-and-Fast-forwarding-Algorithm"
                                     }
-                                    className="project_title">
+                                    className="home_project_title">
                                     A Quick Guide to Quantum Walk, Interpolated Walk, and Fast-forwarding Algorithm
                                 </Link>
                             </p>
@@ -50,7 +51,7 @@ function Home() {
                         <li>
                             <p>
                                 <Link
-                                    className="project_title"
+                                    className="home_project_title"
                                     to={"/article/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product"}>
                                     A Potentially Easier Way to Calculate the Cross Product
                                 </Link>

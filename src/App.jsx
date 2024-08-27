@@ -7,7 +7,8 @@ import Projects from "/src/pages/Projects"; // Import Projects Page
 import Articles from "/src/pages/Articles"; // Import Articles Page
 import Article from "/src/components/Article"; // Import Article Template
 import Header from "/src/components/Header.jsx"; // Import Header
-import "/src/App.css";
+
+import "/src/css/App.css";
 
 // The jsx that puts every components of the website together
 function App() {
