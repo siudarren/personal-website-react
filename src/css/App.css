@@ -84,9 +84,9 @@ p {
     }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
     .background {
-        width: 1100px;
+        width: 1000px;
         margin: 0 auto;
     }
     html {
@@ -94,13 +94,17 @@ p {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     body {
         padding: 0.5rem 2rem 0 2rem;
     }
 
     html {
         font-size: 2vw;
+    }
+    .background {
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
@@ -122,12 +126,21 @@ p {
         grid-row: 2/3;
     }
 
+    .background {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     body {
         padding: 0.5rem 1rem 0 1rem;
     }
 
     html {
         font-size: 4vw;
+    }
+
+    .switch {
+        margin-right: 0rem;
     }
 }
 
