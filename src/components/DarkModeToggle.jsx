@@ -31,10 +31,13 @@ const DarkModeToggle = () => {
     };
 
     return (
-        <label className="switch">
-            <input type="checkbox" onClick={toggleDarkMode} checked={isDarkMode} readOnly />
-            <span className="slider"></span>
-        </label>
+        <div className="mode_switch">
+            <p className="darkMode">{isDarkMode ? "Light Mode" : "Dark Mode"}</p>
+            <label className="switch">
+                <input type="checkbox" onClick={toggleDarkMode} checked={isDarkMode} readOnly />
+                <span className="slider"></span>
+            </label>
+        </div>
     );
 };
 

@@ -7,6 +7,7 @@ import Projects from "/src/pages/Projects"; // Import Projects Page
 import Articles from "/src/pages/Articles"; // Import Articles Page
 import Article from "/src/components/Article"; // Import Article Template
 import Header from "/src/components/Header.jsx"; // Import Header
+import Blog from "/src/pages/Blog";
 
 import "/src/css/App.css";
 
@@ -29,6 +30,8 @@ function App() {
 
                     {/* The route that takes user to view the list of articles */}
                     <Route path="/articles" element={<Articles />} />
+
+                    <Route path="/blog" element={<Blog />} />
 
                     {/* The route that takes user to specific article */}
                     {/* slug is the name of the article */}

@@ -15,8 +15,19 @@
     display: inline-block;
     width: 3rem;
     height: 1.5rem;
-    margin-right: 5.5rem;
+    margin-right: 3.5rem;
 }
+
+.mode_switch {
+    display: flex;
+    font-size: 1.5rem;
+    font-family: var(--opensans);
+    font-weight: bold;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Hide the default HTML checkbox */
 .switch input {

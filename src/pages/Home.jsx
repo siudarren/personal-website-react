@@ -35,6 +35,21 @@ function Home() {
                         view all
                     </Link>
 
+                    <h3 className="projects">Blog Posts:</h3>
+                    <ul>
+                        <li>
+                            <p>
+                                <Link
+                                    className="home_project_title"
+                                    to={"/article/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product"}>
+                                    A Potentially Easier Way to Calculate the Cross Product
+                                </Link>
+                            </p>
+                        </li>
+                    </ul>
+                    <Link to="/blog" className="view_all">
+                        view all
+                    </Link>
                     <h3 className="projects">Articles:</h3>
                     <ul>
                         <li>
@@ -45,15 +60,6 @@ function Home() {
                                     }
                                     className="home_project_title">
                                     A Quick Guide to Quantum Walk, Interpolated Walk, and Fast-forwarding Algorithm
-                                </Link>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <Link
-                                    className="home_project_title"
-                                    to={"/article/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product"}>
-                                    A Potentially Easier Way to Calculate the Cross Product
                                 </Link>
                             </p>
                         </li>
