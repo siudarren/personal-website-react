@@ -75,7 +75,15 @@ function Home() {
                     <Link to="/articles" className="view_all">
                         view all
                     </Link>
-
+                </div>
+                <div>
+                    <div className="profile_box">
+                        <img
+                            src="/profile_pic.png"
+                            alt="A Picture of Darren Siu in front of the SF City Hall"
+                            className="profile_pic"
+                        />
+                    </div>
                     <div className="icons">
                         <a href="https://www.linkedin.com/in/darren-siu-09256617b" target="_blank">
                             <i className="fa-brands fa-linkedin">&nbsp;</i>
@@ -84,14 +92,6 @@ function Home() {
                             <i className="fa-brands fa-square-github"></i>
                         </a>
                     </div>
-                </div>
-
-                <div className="profile_box">
-                    <img
-                        src="/profile_pic.png"
-                        alt="A Picture of Darren Siu in front of the SF City Hall"
-                        className="profile_pic"
-                    />
                 </div>
             </section>
         </main>

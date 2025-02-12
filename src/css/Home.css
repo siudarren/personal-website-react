@@ -32,8 +32,9 @@ li p {
 
 .icons {
     font-size: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 6rem auto 0 auto;
+    display: flex;
+    justify-content: end;
 }
 
 .icons,

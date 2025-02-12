@@ -29,12 +29,19 @@ app.use("/images", express.static(path.join(__dirname, "src", "assets")));
 
 // Route to serve HTML files based on article slug
 app.get("/articles/:slug.html", (req, res) => {
-    const filePath = path.join(
-        __dirname,
-        "src",
-        "articles",
-        `${req.params.slug}.html`
-    );
+    const filePath = path.join(__dirname, "src", "articles", `${req.params.slug}.html`);
+    console.log(`Attempting to serve: ${filePath}`); // Debug log for the file being served
+
+    res.sendFile(filePath, function (err) {
+        if (err) {
+            console.log("Error sending file:", err); // Log error if the file is not found or other issues
+            res.status(404).send("File not found"); // Send 404 status if there is an error
+        }
+    });
+});
+
+app.get("/blog_posts/:slug.html", (req, res) => {
+    const filePath = path.join(__dirname, "src", "blog_posts", `${req.params.slug}.html`);
     console.log(`Attempting to serve: ${filePath}`); // Debug log for the file being served
 
     res.sendFile(filePath, function (err) {

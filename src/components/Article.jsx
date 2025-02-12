@@ -28,6 +28,7 @@ function Article({slug}) {
 
                 // Extracting text from the fetch response
                 const text = await response.text();
+                // console.log(text);
                 setContent(text); // Setting the loaded content to the state
             } catch (err) {
                 console.error("Error loading the article:", err);
