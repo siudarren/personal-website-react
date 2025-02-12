@@ -28,6 +28,10 @@
     font-size: 0.8rem;
 }
 
+.content {
+    margin-top: 3rem;
+}
+
 .content p {
     margin: 1rem 0;
 }
