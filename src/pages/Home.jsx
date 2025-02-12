@@ -9,74 +9,75 @@ function Home() {
                 <h2 className="page_heading">
                     <span className="hi">Hi,</span> I'm Darren
                 </h2>
-                <div className="introduction">
-                    <p>
-                        I am currently studying at the <span className="highlight">UC Berkeley</span> and my academic
-                        passions lie in <span className="highlight">mathematics</span> and&nbsp;
-                        <span className="highlight">physics</span>. Additionally, I enjoy fencing,
-                        <span> coding</span>, and solving Rubik's Cube as side hobbies.
-                    </p>
+                <div className="home_content">
+                    <div className="introduction">
+                        <p>
+                            I am currently studying at the <span className="highlight">UC Berkeley</span> and my
+                            academic passions lie in <span className="highlight">mathematics</span> and&nbsp;
+                            <span className="highlight">physics</span>. Additionally, I enjoy fencing,
+                            <span> coding</span>, and solving Rubik's Cube as side hobbies.
+                        </p>
 
-                    <h3 className="projects">Recent Projects:</h3>
-                    <ul>
-                        <li>
-                            <p>
-                                <a
-                                    href="https://rubiks-cube-simulator-41497947629e.herokuapp.com/#"
-                                    className="home_project_title"
-                                    target="_blank">
-                                    A Rubik's Cube simulator designed to facilitate learning speed cubing
-                                </a>
-                            </p>
-                        </li>
-                    </ul>
+                        <h3 className="projects">Recent Projects:</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    <a
+                                        href="https://rubiks-cube-simulator-41497947629e.herokuapp.com/#"
+                                        className="home_project_title"
+                                        target="_blank">
+                                        A Rubik's Cube simulator designed to facilitate learning speed cubing
+                                    </a>
+                                </p>
+                            </li>
+                        </ul>
 
-                    <Link to="/projects" className="view_all">
-                        view all
-                    </Link>
+                        <Link to="/projects" className="view_all">
+                            view all
+                        </Link>
 
-                    <h3 className="projects">Blog Posts:</h3>
-                    <ul>
-                        <li>
-                            <p>
-                                <Link className="home_project_title" to={"/blog/Expression-of-Love"}>
-                                    Expression of Love
-                                </Link>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <Link
-                                    className="home_project_title"
-                                    to={"/blog/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product"}>
-                                    A Potentially Easier Way to Calculate the Cross Product
-                                </Link>
-                            </p>
-                        </li>
-                    </ul>
-                    <Link to="/blog" className="view_all">
-                        view all
-                    </Link>
-                    <h3 className="projects">Articles:</h3>
-                    <ul>
-                        <li>
-                            <p>
-                                <Link
-                                    to={
-                                        "/article/A-Quick-Guide-to-Quantum-Walk-Interpolated-Walk-and-Fast-forwarding-Algorithm"
-                                    }
-                                    className="home_project_title">
-                                    A Quick Guide to Quantum Walk, Interpolated Walk, and Fast-forwarding Algorithm
-                                </Link>
-                            </p>
-                        </li>
-                    </ul>
+                        <h3 className="projects">Blog Posts:</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    <Link className="home_project_title" to={"/blog/Expression-of-Love"}>
+                                        Expression of Love
+                                    </Link>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <Link
+                                        className="home_project_title"
+                                        to={"/blog/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product"}>
+                                        A Potentially Easier Way to Calculate the Cross Product
+                                    </Link>
+                                </p>
+                            </li>
+                        </ul>
+                        <Link to="/blog" className="view_all">
+                            view all
+                        </Link>
+                        <h3 className="projects">Articles:</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    <Link
+                                        to={
+                                            "/article/A-Quick-Guide-to-Quantum-Walk-Interpolated-Walk-and-Fast-forwarding-Algorithm"
+                                        }
+                                        className="home_project_title">
+                                        A Quick Guide to Quantum Walk, Interpolated Walk, and Fast-forwarding Algorithm
+                                    </Link>
+                                </p>
+                            </li>
+                        </ul>
 
-                    <Link to="/articles" className="view_all">
-                        view all
-                    </Link>
-                </div>
-                <div>
+                        <Link to="/articles" className="view_all">
+                            view all
+                        </Link>
+                    </div>
+
                     <div className="profile_box">
                         <img
                             src="/profile_pic.png"

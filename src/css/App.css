@@ -120,7 +120,7 @@ p {
         margin-bottom: 2rem;
     }
     .introduction {
-        grid-row: 3/4;
+        grid-row: 2/3;
     }
     .greeting {
         grid-row: 2/3;
