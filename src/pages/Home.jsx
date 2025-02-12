@@ -14,7 +14,7 @@ function Home() {
                         I am currently studying at the <span className="highlight">UC Berkeley</span> and my academic
                         passions lie in <span className="highlight">mathematics</span> and&nbsp;
                         <span className="highlight">physics</span>. Additionally, I enjoy fencing,
-                        <span>coding</span>, and solving Rubik's Cube as side hobbies.
+                        <span> coding</span>, and solving Rubik's Cube as side hobbies.
                     </p>
 
                     <h3 className="projects">Recent Projects:</h3>
@@ -39,9 +39,16 @@ function Home() {
                     <ul>
                         <li>
                             <p>
+                                <Link className="home_project_title" to={"/blog/Expression-of-Love"}>
+                                    Expression of Love
+                                </Link>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
                                 <Link
                                     className="home_project_title"
-                                    to={"/article/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product"}>
+                                    to={"/blog/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product"}>
                                     A Potentially Easier Way to Calculate the Cross Product
                                 </Link>
                             </p>

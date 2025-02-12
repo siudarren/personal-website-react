@@ -8,6 +8,7 @@ import Articles from "/src/pages/Articles"; // Import Articles Page
 import Article from "/src/components/Article"; // Import Article Template
 import Header from "/src/components/Header.jsx"; // Import Header
 import Blog from "/src/pages/Blog";
+import Blog_Post from "./components/Blog_Post";
 
 import "/src/css/App.css";
 
@@ -36,6 +37,7 @@ function App() {
                     {/* The route that takes user to specific article */}
                     {/* slug is the name of the article */}
                     <Route path="/article/:slug" element={<ArticleRouteWrapper />} />
+                    <Route path="/blog/:slug" element={<BlogRouteWrapper />} />
                 </Routes>
             </div>
         </Router>
@@ -48,4 +50,8 @@ function ArticleRouteWrapper() {
     return <Article slug={slug} />;
 }
 
+function BlogRouteWrapper() {
+    const {slug} = useParams(); // Extract the slug from the URL
+    return <Blog_Post slug={slug} />;
+}
 export default App;

@@ -6,7 +6,19 @@ function Blog() {
     return (
         <div class="body article_list">
             <h2 class="page_heading">Blog Posts</h2>
-            <Link to="/article/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product">
+            <Link to="/blog/Expression-of-Love">
+                <div className="article-box">
+                    <h3 className="article-title">Expression of Love</h3>
+                    <p className="article-preview">
+                        Back in 2018, during my college application process, my friend Alex suggested I read "50
+                        Successful Harvard Application Essays," a compilation of personal statements from students
+                        admitted to Harvard, to help with my challenges in writing college essays. One essay, in
+                        particular, left a deep impression on me, even after many years.
+                    </p>
+                </div>
+            </Link>
+
+            <Link to="/blog/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product">
                 <div className="article-box">
                     <h3 className="article-title">A Potentially Easier Way to Calculate the Cross Product</h3>
                     <p className="article-preview">
