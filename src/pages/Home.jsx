@@ -86,7 +86,7 @@ function Home() {
                         />
                     </div>
                     <div className="icons">
-                        <a href="https://www.linkedin.com/in/darren-siu-09256617b" target="_blank">
+                        <a href="https://www.linkedin.com/in/darren-siu" target="_blank">
                             <i className="fa-brands fa-linkedin">&nbsp;</i>
                         </a>
                         <a href="https://github.com/siudarren" target="_blank">
