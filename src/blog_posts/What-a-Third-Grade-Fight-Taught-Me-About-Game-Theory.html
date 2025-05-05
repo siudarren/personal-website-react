@@ -3,36 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <!-- 1) Polyfill (for broader browser support) -->
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-
-        <!-- 2) MathJax configuration -->
-        <script>
-            window.MathJax = {
-                tex: {
-                    inlineMath: [
-                        ["$", "$"],
-                        ["\\(", "\\)"],
-                    ],
-                    displayMath: [
-                        ["$$", "$$"],
-                        ["\\[", "\\]"],
-                    ],
-                },
-                options: {
-                    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"],
-                },
-            };
-        </script>
-
-        <!-- 3) MathJax loader -->
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <title>What a Third-Grade Fight Taught Me About Game Theory</title>
 
         <style>
-            .math-container {
-                text-align: center;
-                margin: 2rem 0;
+            /* center every table on the page */
+            table {
+                margin: 1rem auto; /* shorthand for top/bottom 1rem, left/right auto */
+            }
+            th,
+            td {
+                text-align: center; /* horizontal centering */
+                vertical-align: middle; /* vertical centering */
+                padding: 0.5rem; /* optional padding */
             }
         </style>
     </head>
@@ -44,6 +26,7 @@
         <h3 class="reading_time">Reading time: 5 minutes</h3>
 
         <div class="content">
+            <h2>Tian Ji's Horse Racing</h2>
             <p>
                 Back in middle school, I read an ancient Chinese short story called "Tian Ji's Horse Racing" (田忌賽馬).
                 It tells of a horse race between Tian Ji, a military general from the state of Qi, and the King of Qi.
@@ -85,29 +68,25 @@
                 strategy succeeded: he won the race, and the impressed King of Qi became a student of Sun Bin.
             </p>
 
+            <h2>Game Theory</h2>
             <p>
                 Although the story ends here, there's more to explore about the strategy. As brilliant as it was, Tian
                 Ji's approach would likely only work once. His advantage depended on knowing the exact order of the
                 king's horses. To counter this, the king could simply randomize his lineup, making it impossible for
                 Tian Ji to plan his matchups in advance. At that point, the race would shift from a simple contest of
-                speed to a complex problem of game theory.
+                speed to a complex problem of game theory. Both the king and Tian Ji have 3!=6 possible ways to order
+                their horses.
             </p>
 
-            <p>
-                To better understand the setup, we can think of the horses as numbers and the races as simple
-                comparisons: the greater the number, the faster the horse. Suppose the king's horses have speeds of 2,
-                4, and 6, while Tian Ji's horses have speeds of 1, 3, and 5. Both the king and Tian Ji have 3!=6
-                possible ways to order their horses.
-            </p>
             <table>
                 <tr>
                     <th></th>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
+                    <th>Order 1</th>
+                    <th>Order 2</th>
+                    <th>Order 3</th>
+                    <th>Order 4</th>
+                    <th>Order 5</th>
+                    <th>Order 6</th>
                 </tr>
                 <tr>
                     <td><strong>Match 1</strong></td>
@@ -144,19 +123,99 @@
                 and that he would happen to choose the only lineup capable of countering the king's horses, which is a
                 chance of 1/6.
             </p>
+            <table>
+                <caption style="caption-side: bottom; font-weight: bold; margin: 1em; font-size: larger;">
+                    Winners of the Match-Ups
+                </caption>
+                <tr>
+                    <th></th>
+                    <th colspan="6">King</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Order 1</th>
+                    <th>Order 2</th>
+                    <th>Order 3</th>
+                    <th>Order 4</th>
+                    <th>Order 5</th>
+                    <th>Order 6</th>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="6">Tian Ji</th>
+                    <td><strong>Order 1</strong></td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td style="color: red">Tian Ji</td>
+                    <td>King</td>
+                    <td>King</td>
+                </tr>
+                <tr>
+                    <td><strong>Order 2</strong></td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td style="color: red">Tian Ji</td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td>King</td>
+                </tr>
+                <tr>
+                    <td><strong>Order 3</strong></td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td style="color: red">Tian Ji</td>
+                </tr>
+                <tr>
+                    <td><strong>Order 4</strong></td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td style="color: red">Tian Ji</td>
+                    <td>King</td>
+                </tr>
+                <tr>
+                    <td><strong>Order 5</strong></td>
+                    <td style="color: red">Tian Ji</td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td>King</td>
+                </tr>
+                <tr>
+                    <td><strong>Order 6</strong></td>
+                    <td>King</td>
+                    <td style="color: red">Tian Ji</td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td>King</td>
+                    <td>King</td>
+                </tr>
+            </table>
             <p>
-                Since both Tian Ji and the king have six possible ways to arrange their horses, there are 6×6=36
+                Since both Tian Ji and the king have six possible ways to arrange their horses, there are 6x6=36
                 possible matchup combinations in total. Out of these 36 possible outcomes, Tian Ji would win only 6
                 matchups, giving him a 1/6 chance of winning. Welp, a one-in-six chance is still better than no chance
                 at all, right?
             </p>
 
+            <h2>Generalizing the Strategy</h2>
             <p>
                 Although in life, generalizing groups or problems is usually a bad idea — both morally and practically —
                 we mathematicians (self-proclaimed, of course) can't help but love generalizing problems! What are the
                 odds of Tian Ji winning if there are n horses on each side?
             </p>
-
+            <p>
+                To better understand the setup, we can think of the horses as numbers and the races as simple
+                comparisons: the greater the number, the faster the horse. Suppose the king's horses have speeds of 2,
+                4, 6, …, 2n - 2, 2n (meaning the first horse has a speed of 2, the second has a speed of 4, and so on),
+                while Tian Ji's horses have speeds of 1, 3, 5, …, 2n-1.
+            </p>
             <p>
                 You might have noticed from the previous section that the exact order of the king's horses isn't all
                 that important. Since the matchups are relative, and we care more about how the horses are paired
@@ -166,9 +225,10 @@
 
             <p>
                 Without loss of generality, we can assume that the king orders his horses from slowest to fastest,
-                following the sequence 2, 4, 6, …, 2n - 2, 2n (meaning the first horse has a speed of 2, the second has
-                a speed of 4, and so on). For Tian Ji's m-th fastest horse, which has a speed of 2m - 1, to win its
-                matchup, it must compete against one of the king's first m-1 horses — that is, a horse slower than his.
+                following the sequence 2, 4, 6, …, 2n - 2, 2n. That is, in the first match he sends out the horse with
+                speed 2; in the second, the horse with speed 4; and so on. For Tian Ji's m-th fastest horse, which has a
+                speed of 2m - 1, to win its matchup, it must compete against one of the king's first m-1 horses — that
+                is, a horse slower than his.
             </p>
 
             <p>
@@ -190,7 +250,8 @@
             <div class="math-container">
                 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                     <mrow>
-                        <mi>A</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>k</mi><mo>)</mo><mo>=</mo>
+                        <mi>A</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>k</mi><mo stretchy="false">)</mo
+                        ><mo>=</mo>
                         <munder>
                             <mo>∑</mo>
                             <mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow>
@@ -224,7 +285,10 @@
             <div class="math-container">
                 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                     <mrow>
-                        <mi>P</mi><mo>_</mo><mi>n</mi><mo>=</mo>
+                        <msub>
+                            <mi>P</mi>
+                            <mi>n</mi> </msub
+                        ><mo>=</mo>
                         <mfrac>
                             <mrow><mn>1</mn></mrow>
                             <mrow><mi>n</mi><mo>!</mo></mrow>
