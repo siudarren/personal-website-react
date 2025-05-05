@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <h2 class="article_title">What a Third-Grade Fight Taught Me About Game Theory</h2>
+
+        <h3 class="date">May 4th, 2025</h3>
+
+        <h3 class="reading_time">Reading time: 5 minutes</h3>
+
+        <div class="content">
+            <p>
+                Back in middle school, I read an ancient Chinese short story called "Tian Ji's Horse Racing" (田忌賽馬).
+                It tells of a horse race between Tian Ji, a military general from the state of Qi, and the King of Qi.
+                Both men enjoyed racing and frequently bet against each other. Each would select three horses, ranking
+                them as best, second-best, and worst. Horses of matching ranks competed against one another, and whoever
+                won two out of three races was declared the winner.
+            </p>
+            <p>
+                However, Tian Ji's horses were not as fast as the king's. If he raced his horses according to their true
+                performance, he would lose all three matches. With guidance from his strategist, Sun Bin, Tian Ji
+                devised a clever plan: he labeled his slowest horse as his best, his fastest horse as second-best, and
+                his second-best horse as the worst.
+            </p>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>King</th>
+                    <th>Tian Ji</th>
+                </tr>
+                <tr>
+                    <td><strong>Match 1:</strong></td>
+                    <td>Fastest Horse</td>
+                    <td>Slowest Horse</td>
+                </tr>
+                <tr>
+                    <td><strong>Match 2:</strong></td>
+                    <td>Second Fastest Horse</td>
+                    <td>Fastest Horse</td>
+                </tr>
+                <tr>
+                    <td><strong>Match 3:</strong></td>
+                    <td>Slowest Horse</td>
+                    <td>Second Fastest Horse</td>
+                </tr>
+            </table>
+            <p>
+                Using this tactic, Tian Ji deliberately sacrificed the race against the king's best horse to maximize
+                his chances of winning the other two — and ultimately, the match itself. In the story, Tian Ji's
+                strategy succeeded: he won the race, and the impressed King of Qi became a student of Sun Bin.
+            </p>
+
+            <p>
+                Although the story ends here, there's more to explore about the strategy. As brilliant as it was, Tian
+                Ji's approach would likely only work once. His advantage depended on knowing the exact order of the
+                king's horses. To counter this, the king could simply randomize his lineup, making it impossible for
+                Tian Ji to plan his matchups in advance. At that point, the race would shift from a simple contest of
+                speed to a complex problem of game theory.
+            </p>
+
+            <p>
+                To better understand the setup, we can think of the horses as numbers and the races as simple
+                comparisons: the greater the number, the faster the horse. Suppose the king's horses have speeds of 2,
+                4, and 6, while Tian Ji's horses have speeds of 1, 3, and 5. Both the king and Tian Ji have 3!=6
+                possible ways to order their horses.
+            </p>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                </tr>
+                <tr>
+                    <td><strong>Match 1</strong></td>
+                    <td>Fastest</td>
+                    <td>Fastest</td>
+                    <td>2nd Fastest</td>
+                    <td>2nd Fastest</td>
+                    <td>Slowest</td>
+                    <td>Slowest</td>
+                </tr>
+                <tr>
+                    <td><strong>Match 2</strong></td>
+                    <td>2nd Fastest</td>
+                    <td>Slowest</td>
+                    <td>Fastest</td>
+                    <td>Slowest</td>
+                    <td>Fastest</td>
+                    <td>2nd Fastest</td>
+                </tr>
+                <tr>
+                    <td><strong>Match 3</strong></td>
+                    <td>Slowest</td>
+                    <td>2nd Fastest</td>
+                    <td>Slowest</td>
+                    <td>Fastest</td>
+                    <td>2nd Fastest</td>
+                    <td>Fastest</td>
+                </tr>
+            </table>
+            <p>
+                To prevent Tian Ji from planning his lineup strategically, the king could randomly choose one of the six
+                possible orders, giving each order an equal probability of 1/6. Tian Ji, with no information about the
+                king's arrangement, would also have to randomly pick an order, hoping that luck would be on his side —
+                and that he would happen to choose the only lineup capable of countering the king's horses, which is a
+                chance of 1/6.
+            </p>
+            <p>
+                Since both Tian Ji and the king have six possible ways to arrange their horses, there are 6×6=36
+                possible matchup combinations in total. Out of these 36 possible outcomes, Tian Ji would win only 6
+                matchups, giving him a 1/6 chance of winning. Welp, a one-in-six chance is still better than no chance
+                at all, right?
+            </p>
+
+            <p>
+                Although in life, generalizing groups or problems is usually a bad idea — both morally and practically —
+                we mathematicians (self-proclaimed, of course) can't help but love generalizing problems! What are the
+                odds of Tian Ji winning if there are n horses on each side?
+            </p>
+
+            <p>
+                You might have noticed from the previous section that the exact order of the king's horses isn't all
+                that important. Since the matchups are relative, and we care more about how the horses are paired
+                against each other, we can simplify the problem: given a fixed lineup of the king's horses, how many
+                different ways can Tian Ji arrange his horses to win?
+            </p>
+
+            <p>
+                Without loss of generality, we can assume that the king orders his horses from slowest to fastest,
+                following the sequence 2, 4, 6, …, 2n - 2, 2n (meaning the first horse has a speed of 2, the second has
+                a speed of 4, and so on). For Tian Ji's m-th fastest horse, which has a speed of 2m - 1, to win its
+                matchup, it must compete against one of the king's first m-1 horses — that is, a horse slower than his.
+            </p>
+
+            <p>
+                At this point, we have transformed the problem into one of combinatorics. For Tian Ji to win the overall
+                match, more than half of his horses must be assigned to matchups where their opponent's position number
+                is less than their own ranking among Tian Ji's horses. In other words, Tian Ji's m-th fastest horse must
+                be paired against one of the king's first m−1 horses (e.g., his 3rd fastest horse must face one of the
+                king's first two horses).
+            </p>
+
+            <p>
+                In combinatorics, we refer to such favorable matchups as exceedances — positions where the value (here,
+                Tian Ji's ranking) exceeds its index (the position in the king's lineup). The number of permutations of
+                n elements with exactly k exceedances is given by the Eulerian numbers. Using this, we can calculate how
+                many ways Tian Ji can order his horses so that more than half of them are in matchups where they exceed
+                their opponent's position — giving him a winning outcome.
+            </p>
+
+            <p>
+                Here, we can see that as n increases — that is, as more horses are included in the competition — Tian
+                Ji's chances of winning also improve. In fact, as n→∞, the probability of Tian Ji winning approaches
+                1/2. So, if we were in Tian Ji's position, facing a challenge from the king, our best strategy would be
+                to advocate for a race involving as many horses as possible.
+            </p>
+
+            <p>
+                At this point, you might be thinking I tricked you into reading a whole paragraph about game theory and
+                math — and that it has absolutely nothing to do with the fight I had in third grade. But hang in there —
+                that fight is where everything starts to make sense.
+            </p>
+
+            <p>Back in third grade, I got into a fight with a classmate.</p>
+            <p>I called in my sixth-grade older brother.</p>
+            <p>He called his eighth-grade brother.</p>
+            <p>So I brought in my cousin, who was a high school freshman.</p>
+            <p>Then he called his brother — a senior in high school!</p>
+            <p>At that point, we thought we were doomed...</p>
+            <p>
+                Luckily, my cousin had already learned about Tian Ji's Horse Racing in class — and in the end, I went up
+                against his high school senior brother.
+            </p>
+        </div>
+    </body>
+</html>

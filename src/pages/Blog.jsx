@@ -6,6 +6,18 @@ function Blog() {
     return (
         <div class="body article_list">
             <h2 class="page_heading">Blog Posts</h2>
+            <Link to="/blog/What-a-Third-Grade-Fight-Taught-Me-About-Game-Theory">
+                <div className="article-box">
+                    <h3 className="article-title">What a Third-Grade Fight Taught Me About Game Theory</h3>
+                    <p className="article-preview">
+                        Back in middle school, I read an ancient Chinese short story called "Tian Ji's Horse Racing." It
+                        tells of a horse race between Tian Ji, a military general from the state of Qi, and the King of
+                        Qi. Both men enjoyed racing and frequently bet against each other. Each would select three
+                        horses, ranking them as best, second-best, and worst.
+                    </p>
+                </div>
+            </Link>
+
             <Link to="/blog/Expression-of-Love">
                 <div className="article-box">
                     <h3 className="article-title">Expression of Love</h3>

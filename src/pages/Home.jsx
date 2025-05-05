@@ -40,17 +40,17 @@ function Home() {
                         <ul>
                             <li>
                                 <p>
-                                    <Link className="home_project_title" to={"/blog/Expression-of-Love"}>
-                                        Expression of Love
+                                    <Link
+                                        className="home_project_title"
+                                        to={"/blog/What-a-Third-Grade-Fight-Taught-Me-About-Game-Theory"}>
+                                        What a Third-Grade Fight Taught Me About Game Theory
                                     </Link>
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    <Link
-                                        className="home_project_title"
-                                        to={"/blog/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product"}>
-                                        A Potentially Easier Way to Calculate the Cross Product
+                                    <Link className="home_project_title" to={"/blog/Expression-of-Love"}>
+                                        Expression of Love
                                     </Link>
                                 </p>
                             </li>
