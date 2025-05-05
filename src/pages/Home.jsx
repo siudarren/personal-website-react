@@ -12,10 +12,9 @@ function Home() {
                 <div className="home_content">
                     <div className="introduction">
                         <p>
-                            I am currently studying at the <span className="highlight">UC Berkeley</span> and my
-                            academic passions lie in <span className="highlight">mathematics</span> and&nbsp;
-                            <span className="highlight">physics</span>. Additionally, I enjoy fencing,
-                            <span> coding</span>, and solving Rubik's Cube as side hobbies.
+                            I am a firmware engineer at Western Digital with a strong foundation in mathematics and
+                            physics from UC Berkeley. Outside of work, I enjoy fencing, coding, and solving Rubik's
+                            Cubes for the challenge and fun.
                         </p>
 
                         <h3 className="projects">Recent Projects:</h3>
