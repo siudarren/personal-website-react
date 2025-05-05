@@ -4,7 +4,37 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <!-- 1) Polyfill (for broader browser support) -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+        <!-- 2) MathJax configuration -->
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [
+                        ["$", "$"],
+                        ["\\(", "\\)"],
+                    ],
+                    displayMath: [
+                        ["$$", "$$"],
+                        ["\\[", "\\]"],
+                    ],
+                },
+                options: {
+                    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"],
+                },
+            };
+        </script>
+
+        <!-- 3) MathJax loader -->
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+        <style>
+            .math-container {
+                text-align: center;
+                margin: 2rem 0;
+            }
+        </style>
     </head>
     <body>
         <h2 class="article_title">What a Third-Grade Fight Taught Me About Game Theory</h2>
@@ -157,15 +187,19 @@
                 their opponent's position — giving him a winning outcome.
             </p>
             <p>Eulerian Numbers:</p>
-            <script type="math/tex; mode=display">
-                A(n,k) = \displaystyle\sum_{i=0}^{k}(-1)^i\binom{n+1}{i}(k+1-i)^n ,
-            </script>
+            <div class="math-container">
+                <script type="math/tex; mode=display">
+                    A(n,k) = \sum_{i=0}^{k}(-1)^{i}\binom{n+1}{i}\,(k+1-i)^{n}
+                </script>
+            </div>
 
             <p>By summing up all the Eulerian Numbers we can get the equation for the possibility of winning:</p>
-            <script type="math/tex; mode=display">
-                P_n = \frac{1}{n!} \sum_{k=\lfloor n/2 \rfloor + 1}^{n} \sum_{j=0}^{k+1} (-1)^j \binom{n+1}{j} (k + 1
-                                - j)^n
-            </script>
+            <div class="math-container">
+                <script type="math/tex; mode=display">
+                    P_n = \frac{1}{n!}\;\sum_{k=\lfloor n/2\rfloor + 1}^{n}\;
+                          \sum_{j=0}^{k+1}(-1)^{j}\binom{n+1}{j}\,(k+1-j)^{n}
+                </script>
+            </div>
             <p>
                 Here, we can see that as n increases — that is, as more horses are included in the competition — Tian
                 Ji's chances of winning also improve. In fact, as n→∞, the probability of Tian Ji winning approaches
