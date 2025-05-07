@@ -14,10 +14,13 @@
 }
 
 .article-box-head {
-    align-items: center;
     margin-bottom: 0.5rem;
 }
 .date-and-read-time {
     font-weight: normal;
     font-size: 0.65em;
+}
+
+.article-title {
+    margin-bottom: 0.5rem;
 }
