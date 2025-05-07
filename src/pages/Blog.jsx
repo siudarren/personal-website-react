@@ -8,7 +8,10 @@ function Blog() {
             <h2 class="page_heading">Blog Posts</h2>
             <Link to="/blog/What-a-Third-Grade-Fight-Taught-Me-About-Game-Theory">
                 <div className="article-box">
-                    <h3 className="article-title">What a Third-Grade Fight Taught Me About Game Theory</h3>
+                    <div className="article-box-head">
+                        <h3 className="article-title">What a Third-Grade Fight Taught Me About Game Theory</h3>
+                        <h4 className="date-and-read-time">May 4th, 2025 | 5 minute read</h4>
+                    </div>
                     <p className="article-preview">
                         Back in middle school, I read an ancient Chinese short story called "Tian Ji's Horse Racing." It
                         tells of a horse race between Tian Ji, a military general from the state of Qi, and the King of

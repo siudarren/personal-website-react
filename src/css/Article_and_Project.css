@@ -16,3 +16,10 @@
 .article-preview {
     font-size: 0.9rem;
 }
+
+.article-box-head {
+    display: flex;
+}
+.date-and-read-time {
+    margin-left: auto;
+}
