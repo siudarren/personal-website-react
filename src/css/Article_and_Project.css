@@ -14,12 +14,10 @@
 }
 
 .article-box-head {
-    display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
 }
 .date-and-read-time {
-    margin: 0 0 0 auto;
     font-weight: normal;
     font-size: smaller;
 }
