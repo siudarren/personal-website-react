@@ -19,6 +19,7 @@
 
 .article-box-head {
     display: flex;
+    align-items: center;
 }
 .date-and-read-time {
     margin: 0 0 0 auto;
