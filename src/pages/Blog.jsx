@@ -23,7 +23,11 @@ function Blog() {
 
             <Link to="/blog/Expression-of-Love">
                 <div className="article-box">
-                    <h3 className="article-title">Expression of Love</h3>
+                    <div className="article-box-head">
+                        <h3 className="article-title">Expression of Love</h3>
+                        <h4 className="date-and-read-time">Feb 11th, 2025 | 3 minute read</h4>
+                    </div>
+
                     <p className="article-preview">
                         Back in 2018, during my college application process, my friend Alex suggested I read "50
                         Successful Harvard Application Essays," a compilation of personal statements from students
@@ -35,7 +39,11 @@ function Blog() {
 
             <Link to="/blog/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product">
                 <div className="article-box">
-                    <h3 className="article-title">A Potentially Easier Way to Calculate the Cross Product</h3>
+                    <div className="article-box-head">
+                        <h3 className="article-title">A Potentially Easier Way to Calculate the Cross Product</h3>
+                        <h4 className="date-and-read-time">Aug 26th, 2024 | 3 minute read</h4>
+                    </div>
+
                     <p className="article-preview">
                         One of the first things I noticed after arriving in the United States for college was how people
                         write and calculate math differently. Due to variations in language, it is normal for people to

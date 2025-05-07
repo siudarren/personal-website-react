@@ -8,9 +8,13 @@ function Articles() {
             <h2 class="page_heading">Articles</h2>
             <Link to="/article/A-Quick-Guide-to-Quantum-Walk-Interpolated-Walk-and-Fast-forwarding-Algorithm">
                 <div className="article-box">
-                    <h3 className="article-title">
-                        A Quick Guide to Quantum Walk, Interpolated Walk, and Fast-forwarding Algorithm
-                    </h3>
+                    <div className="article-box-head">
+                        <h3 className="article-title">
+                            A Quick Guide to Quantum Walk, Interpolated Walk, and Fast-forwarding Algorithm
+                        </h3>
+                        <h4 className="date-and-read-time">May 6th, 2024 | 20 minute read</h4>
+                    </div>
+
                     <p className="article-preview">
                         Quantum walks, distinguished by unique properties not present in classical random walks,
                         facilitate the development of algorithms that achieve quantum speedup. This paper delves into
