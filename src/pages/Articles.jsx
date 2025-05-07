@@ -12,7 +12,7 @@ function Articles() {
                         <h3 className="article-title">
                             A Quick Guide to Quantum Walk, Interpolated Walk, and Fast-forwarding Algorithm
                         </h3>
-                        <h4 className="date-and-read-time">May 6th, 2024 | 20 minute read</h4>
+                        <h4 className="date-and-read-time">May 6th, 2024</h4>
                     </div>
 
                     <p className="article-preview">
