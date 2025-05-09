@@ -35,8 +35,8 @@ function Home() {
                                         href="https://reversi-ai-f1768870ea36.herokuapp.com"
                                         className="home_project_title"
                                         target="_blank">
-                                        An online Reversi AI made to clear{" "}
-                                        <strong>Clubhouse Games: 51 Worldwide Classics</strong> on Nintendo Switch.
+                                        An online Reversi AI made to clear Clubhouse Games: 51 Worldwide Classics on
+                                        Nintendo Switch.
                                     </a>
                                 </p>
                             </li>
@@ -83,9 +83,9 @@ function Home() {
                             </li>
                         </ul>
 
-                        <Link to="/articles" className="view_all">
+                        {/* <Link to="/articles" className="view_all">
                             view all
-                        </Link>
+                        </Link> */}
                     </div>
 
                     <div className="profile_box">
