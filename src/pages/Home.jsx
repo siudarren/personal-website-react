@@ -27,6 +27,13 @@ function Home() {
                                         target="_blank">
                                         A Rubik's Cube simulator designed to facilitate learning speed cubing
                                     </a>
+                                    <a
+                                        href="https://reversi-ai-f1768870ea36.herokuapp.com"
+                                        className="home_project_title"
+                                        target="_blank">
+                                        An online Reversi AI made to clear{" "}
+                                        <strong>Clubhouse Games: 51 Worldwide Classics</strong> on Nintendo Switch.
+                                    </a>
                                 </p>
                             </li>
                         </ul>
