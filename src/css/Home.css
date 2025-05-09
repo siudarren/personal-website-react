@@ -1,6 +1,6 @@
 .profile_pic {
-    width: 15rem;
-    height: 15rem;
+    width: 16rem;
+    height: 16rem;
     border-radius: 50%;
     object-fit: cover; /* Ensures the image covers the area without stretching */
     overflow: hidden;
@@ -115,7 +115,7 @@ i:hover {
     .introduction {
         /* grid-column: 1/2; */
         grid-row: 2/3;
-        margin: 0 auto
+        margin: 0 auto;
     }
     .icons {
         grid-column: 1/2;
