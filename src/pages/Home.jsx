@@ -27,6 +27,10 @@ function Home() {
                                         target="_blank">
                                         A Rubik's Cube simulator designed to facilitate learning speed cubing
                                     </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
                                     <a
                                         href="https://reversi-ai-f1768870ea36.herokuapp.com"
                                         className="home_project_title"
