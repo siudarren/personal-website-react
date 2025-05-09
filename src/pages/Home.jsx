@@ -22,21 +22,21 @@ function Home() {
                             <li>
                                 <p>
                                     <a
-                                        href="https://rubiks-cube-simulator-41497947629e.herokuapp.com/#"
+                                        href="https://reversi-ai-f1768870ea36.herokuapp.com"
                                         className="home_project_title"
                                         target="_blank">
-                                        A Rubik's Cube simulator designed to facilitate learning speed cubing
+                                        An online Reversi AI made to clear Clubhouse Games: 51 Worldwide Classics on
+                                        Nintendo Switch.
                                     </a>
                                 </p>
                             </li>
                             <li>
                                 <p>
                                     <a
-                                        href="https://reversi-ai-f1768870ea36.herokuapp.com"
+                                        href="https://rubiks-cube-simulator-41497947629e.herokuapp.com/#"
                                         className="home_project_title"
                                         target="_blank">
-                                        An online Reversi AI made to clear Clubhouse Games: 51 Worldwide Classics on
-                                        Nintendo Switch.
+                                        A Rubik's Cube simulator designed to facilitate learning speed cubing
                                     </a>
                                 </p>
                             </li>
@@ -83,9 +83,9 @@ function Home() {
                             </li>
                         </ul>
 
-                        {/* <Link to="/articles" className="view_all">
+                        <Link to="/articles" className="view_all">
                             view all
-                        </Link> */}
+                        </Link>
                     </div>
 
                     <div className="profile_box">
