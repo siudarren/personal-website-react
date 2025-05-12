@@ -120,7 +120,7 @@ i:hover {
     .icons {
         grid-column: 1/2;
         grid-row: 3/4;
-        margin: 0 auto;
+        margin: 2rem auto;
     }
     .profile_box {
         grid-column: 1/2;
