@@ -15,6 +15,13 @@ import usePageTracking from "./usePageTracking";
 
 // The jsx that puts every components of the website together
 function App() {
+    return (
+        <Router>
+            <InnerApp />
+        </Router>
+    );
+}
+function InnerApp() {
     usePageTracking();
     return (
         <Router>
