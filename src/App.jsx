@@ -11,9 +11,11 @@ import Blog from "/src/pages/Blog";
 import Blog_Post from "./components/Blog_Post";
 
 import "/src/css/App.css";
+import usePageTracking from "./usePageTracking";
 
 // The jsx that puts every components of the website together
 function App() {
+    usePageTracking();
     return (
         <Router>
             {/* The background is the box that includes every DOM of the website */}
