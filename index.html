@@ -7,10 +7,20 @@
         <!-- Title of the website -->
         <title>Darren Siu</title>
 
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-N729BR6ZKZ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-N729BR6ZKZ");
+        </script>
+
         <!-- Description of the website -->
-        <meta
-            name="description"
-            content="A personal website of Darren Siu, a student at UC Berkeley." />
+        <meta name="description" content="A personal website of Darren Siu, a student at UC Berkeley." />
 
         <!-- Download the fonts (Open Sans) from google fonts  -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,20 +30,9 @@
             rel="stylesheet" />
 
         <!-- Download favicons of different sizes from public -->
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/apple-touch-icon.png" />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/favicon-32x32.png" />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/favicon-16x16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
@@ -64,8 +63,6 @@
         <script type="module" src="/src/main.jsx"></script>
 
         <!-- Download the icons for linkedin, github, and etc. -->
-        <script
-            src="https://kit.fontawesome.com/6015063884.js"
-            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/6015063884.js" crossorigin="anonymous"></script>
     </body>
 </html>
