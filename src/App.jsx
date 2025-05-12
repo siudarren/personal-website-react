@@ -14,42 +14,31 @@ import "/src/css/App.css";
 import usePageTracking from "./usePageTracking";
 
 // The jsx that puts every components of the website together
+// Top-level: only one Router
 function App() {
     return (
         <Router>
-            <InnerApp />
+            <AppRoutes />
         </Router>
     );
 }
-function InnerApp() {
+
+// This lives inside the Router, so useLocation() works
+function AppRoutes() {
     usePageTracking();
+
     return (
-        <Router>
-            {/* The background is the box that includes every DOM of the website */}
-            {/* It decides the width of the webpage */}
-            <div className="background">
-                {/* The Header is a link that goes back to the home page  */}
-                {/* Header is on the top of every webpage on the site */}
-                <Header /> {/* Use Header here so it appears on all pages */}
-                <Routes>
-                    {/* The route that takes user back to the home page */}
-                    <Route path="/" element={<Home />} />
-
-                    {/* The route that takes user to view the list of projects */}
-                    <Route path="/projects" element={<Projects />} />
-
-                    {/* The route that takes user to view the list of articles */}
-                    <Route path="/articles" element={<Articles />} />
-
-                    <Route path="/blog" element={<Blog />} />
-
-                    {/* The route that takes user to specific article */}
-                    {/* slug is the name of the article */}
-                    <Route path="/article/:slug" element={<ArticleRouteWrapper />} />
-                    <Route path="/blog/:slug" element={<BlogRouteWrapper />} />
-                </Routes>
-            </div>
-        </Router>
+        <div className="background">
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/articles" element={<Articles />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/article/:slug" element={<ArticleRouteWrapper />} />
+                <Route path="/blog/:slug" element={<BlogRouteWrapper />} />
+            </Routes>
+        </div>
     );
 }
 
