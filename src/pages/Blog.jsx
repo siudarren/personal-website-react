@@ -6,6 +6,21 @@ function Blog() {
     return (
         <div class="body article_list">
             <h2 class="page_heading">Blog Posts</h2>
+            <Link to="/blog/A-Romantic-Revisit-to-On-Bullshit">
+                <div className="article-box">
+                    <div className="article-box-head">
+                        <h3 className="article-title">A Romantic Revisit to On Bullshit</h3>
+                        <h4 className="date-and-read-time">May 16th, 2025 | 3 minute read</h4>
+                    </div>
+                    <p className="article-preview">
+                        A few weeks ago, I went on a date with a girl.She wasn't what I thought I was looking for — she
+                        didn't check many of the boxes I had kept in mind for a long-term partner — and yet, it turned
+                        out to be one of the best dates I've ever had. It wasn't romantic in any dramatic way. It was
+                        peaceful. We laughed, debated values, walked around, talked, and wandered into a few new stores
+                        and museums together — nothing particularly special.
+                    </p>
+                </div>
+            </Link>
             <Link to="/blog/What-a-Third-Grade-Fight-Taught-Me-About-Game-Theory">
                 <div className="article-box">
                     <div className="article-box-head">
