@@ -5,7 +5,7 @@ import "/src/css/Article_and_Project.css";
 function Articles() {
     return (
         <div class="body article_list">
-            <h2 class="page_heading">Articles</h2>
+            <h2 class="page_heading">Academic & Technical Writing</h2>
             <Link to="/article/A-Quick-Guide-to-Quantum-Walk-Interpolated-Walk-and-Fast-forwarding-Algorithm">
                 <div className="article-box">
                     <div className="article-box-head">

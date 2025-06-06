@@ -68,7 +68,7 @@ function Home() {
                         <Link to="/blog" className="view_all">
                             view all
                         </Link>
-                        <h3 className="projects">Articles:</h3>
+                        <h3 className="projects">Academic & Technical Writing:</h3>
                         <ul>
                             <li>
                                 <p>
