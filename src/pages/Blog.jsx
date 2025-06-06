@@ -13,7 +13,7 @@ function Blog() {
                         <h4 className="date-and-read-time">May 16th, 2025 | 3 minute read</h4>
                     </div>
                     <p className="article-preview">
-                        A few weeks ago, I went on a date with a girl.She wasn't what I thought I was looking for — she
+                        A few weeks ago, I went on a date with a girl. She wasn't what I thought I was looking for — she
                         didn't check many of the boxes I had kept in mind for a long-term partner — and yet, it turned
                         out to be one of the best dates I've ever had. It wasn't romantic in any dramatic way. It was
                         peaceful. We laughed, debated values, walked around, talked, and wandered into a few new stores
@@ -52,7 +52,7 @@ function Blog() {
                 </div>
             </Link>
 
-            <Link to="/blog/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product">
+            {/* <Link to="/blog/A-Potentially-Easier-Way-to-Calculate-the-Cross-Product">
                 <div className="article-box">
                     <div className="article-box-head">
                         <h3 className="article-title">A Potentially Easier Way to Calculate the Cross Product</h3>
@@ -66,7 +66,7 @@ function Blog() {
                         speakers always write the numerator first, followed by the denominator.
                     </p>
                 </div>
-            </Link>
+            </Link> */}
         </div>
     );
 }
