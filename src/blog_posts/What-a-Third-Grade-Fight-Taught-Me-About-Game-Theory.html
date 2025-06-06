@@ -21,6 +21,27 @@
                 font-weight: normal;
                 margin-top: 3em;
             }
+
+            /* 2️⃣  Desktop / tablet: keep them side-by-side */
+            .pn-table-pair {
+                display: flex;
+                justify-content: center;
+                gap: 0;
+            }
+
+            /* 3️⃣  Phone: turn the flex row into a column */
+            @media (max-width: 600px) {
+                /* pick the cut-off you prefer */
+                .pn-table-pair {
+                    flex-direction: column; /* stack top-to-bottom */
+                    align-items: center; /* keep each table centred */
+                }
+
+                /* optional: add breathing-room between the stacked tables */
+                .pn-table-pair table {
+                    margin: 0 0 1.5rem 0;
+                }
+            }
         </style>
     </head>
     <body>
@@ -337,7 +358,7 @@
                 </math>
             </div>
 
-            <div style="display: flex; justify-content: center; gap: 0; margin-top: 3em">
+            <div class="pn-table-pair">
                 <!-- Odd n table -->
                 <table style="margin-left: auto; margin-right: 2em">
                     <caption>
