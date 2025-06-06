@@ -6,6 +6,20 @@ function Blog() {
     return (
         <div class="body article_list">
             <h2 class="page_heading">Blog Posts</h2>
+            <Link to="/blog/Epiphany-522">
+                <div className="article-box">
+                    <div className="article-box-head">
+                        <h3 className="article-title">Epiphany 522</h3>
+                        <h4 className="date-and-read-time">June 2nd, 2025 | 4 minute read</h4>
+                    </div>
+                    <p className="article-preview">
+                        Growing up in a family and community rooted in Chinese culture, I was always taught that
+                        everything has two sides. Just like Yin and Yang, nothing is purely good or purely bad:
+                        admiration and fame come with jealousy and betrayal; extraordinary talent comes with pressure;
+                        and success comes with loneliness.
+                    </p>
+                </div>
+            </Link>
             <Link to="/blog/A-Romantic-Revisit-to-On-Bullshit">
                 <div className="article-box">
                     <div className="article-box-head">
