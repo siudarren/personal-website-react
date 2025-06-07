@@ -49,7 +49,7 @@ function Article({slug}) {
         <div>
             {/* Link to navigate back to the articles list */}
             <Link to="/articles">
-                <h3 className="back">back to articles</h3>
+                <h3 className="back">back to Academic & Technical Writing</h3>
             </Link>
 
             {/* Rendering HTML content directly from the state */}
@@ -57,7 +57,7 @@ function Article({slug}) {
 
             {/* Duplicate link for better user navigation */}
             <Link to="/articles">
-                <h3 className="back end_back">back to articles</h3>
+                <h3 className="back end_back">back to Academic & Technical Writing</h3>
             </Link>
         </div>
     );

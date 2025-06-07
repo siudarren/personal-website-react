@@ -15,11 +15,11 @@
 /* Dark theme */
 :root.dark-mode {
     --border-color: #ffeee0;
-    --button-color: #ffc494;
+    --button-color: rgb(160, 160, 160);
     --background-color: #121212;
     --background-color2: rgb(160, 160, 160);
     --hover-color: #ffc494;
-    --button-hover-color: #80624a;
+    --button-hover-color: #ffc494;
     --gray: #ccbfb4;
     --word-color: rgb(160, 160, 160);
     --word-color2: #ffc494;
@@ -74,6 +74,7 @@ p {
 .body {
     margin-top: 2rem;
 }
+
 
 @media (min-width: 1500px) {
     .background {
