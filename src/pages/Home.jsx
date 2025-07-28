@@ -12,8 +12,8 @@ function Home() {
                 <div className="home_content">
                     <div className="introduction">
                         <p>
-                            I am a firmware engineer with a strong foundation in mathematics and
-                            physics from UC Berkeley. Outside of work, I enjoy fencing, coding, creative writing, and solving Rubik's
+                            I am a firmware engineer with a strong foundation in mathematics and physics from UC
+                            Berkeley. Outside of work, I enjoy fencing, coding, creative writing, and solving Rubik's
                             Cubes for the challenge and fun.
                         </p>
 
@@ -33,7 +33,7 @@ function Home() {
                             <li>
                                 <p>
                                     <a
-                                        href="https://rubiks-cube-simulator-41497947629e.herokuapp.com/#"
+                                        href="https://cube.darrensiu.com/#"
                                         className="home_project_title"
                                         target="_blank">
                                         A Rubik's Cube simulator designed to facilitate learning speed cubing

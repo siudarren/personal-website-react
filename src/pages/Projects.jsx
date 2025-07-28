@@ -5,7 +5,7 @@ function Projects() {
     return (
         <div class="body">
             <h2 class="page_heading">Projects</h2>
-            <a href="https://vanishing-tic-tac-toe-0a2e3fedef0f.herokuapp.com/#" target="_blank">
+            <a href="https://vanishing-tic-tac-toe.darrensiu.com/#" target="_blank">
                 <div class="article-box">
                     <h3 class="article-title">Vanishing Tic Tac Toe</h3>
                     <p class="article-preview">
@@ -35,7 +35,7 @@ function Projects() {
                     </p>
                 </div>
             </a>
-            <a href="https://rubiks-cube-simulator-41497947629e.herokuapp.com/#" target="_blank">
+            <a href="https://cube.darrensiu.com/#" target="_blank">
                 <div class="article-box">
                     <h3 class="article-title">Rubik's Cube simulator</h3>
                     <p class="article-preview">
