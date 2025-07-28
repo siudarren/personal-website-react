@@ -12,8 +12,8 @@ function Home() {
                 <div className="home_content">
                     <div className="introduction">
                         <p>
-                            I am a firmware engineer at Western Digital with a strong foundation in mathematics and
-                            physics from UC Berkeley. Outside of work, I enjoy fencing, coding, and solving Rubik's
+                            I am a firmware engineer with a strong foundation in mathematics and
+                            physics from UC Berkeley. Outside of work, I enjoy fencing, coding, writing, and solving Rubik's
                             Cubes for the challenge and fun.
                         </p>
 
