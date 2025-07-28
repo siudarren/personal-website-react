@@ -6,7 +6,7 @@ function Articles() {
     return (
         <div class="body article_list">
             <h2 class="page_heading">Academic & Technical Writing</h2>
-            <Link to="/article/A-Quick-Guide-to-Quantum-Walk-Interpolated-Walk-and-Fast-forwarding-Algorithm">
+            <Link to="/article/A-Dynamic-Analysis-of-Rotating-Memory-Tic-Tac-Toe">
                 <div className="article-box">
                     <div className="article-box-head">
                         <h3 className="article-title">
