@@ -5,6 +5,22 @@ function Projects() {
     return (
         <div class="body">
             <h2 class="page_heading">Projects</h2>
+            <a href="https://vanishing-tic-tac-toe-0a2e3fedef0f.herokuapp.com/#" target="_blank">
+                <div class="article-box">
+                    <h3 class="article-title">Vanishing Tic Tac Toe</h3>
+                    <p class="article-preview">
+                        While scrolling through Instagram Reels, I came across an intriguing variation of Tic Tac Toe
+                        with a twist: once there are more than six tiles on the board, the oldest tile disappears.
+                        Curious whether this version is also a solved game like the classic one—which results in a
+                        forced draw with perfect play—I built an online version and implemented a Minimax AI to explore
+                        it further. Through analysis, I discovered that this variant has a forced win in 13 moves from
+                        the initial position. However, if the first move is restricted to the center or a corner—rather
+                        than the side edge, which is required for the 13-move forced win—the game results in a forced
+                        draw due to repetition. A detailed explanation, including the mathematical reasoning, is
+                        available in the Academic & Technical Writing section of the website.
+                    </p>
+                </div>
+            </a>
             <a href="https://reversi-ai-f1768870ea36.herokuapp.com/#" target="_blank">
                 <div class="article-box">
                     <h3 class="article-title">Reversi AI</h3>
