@@ -21,7 +21,7 @@ function Projects() {
                     </p>
                 </div>
             </a>
-            <a href="https://reversi-ai-f1768870ea36.herokuapp.com/#" target="_blank">
+            <a href="https://reversi.darrensiu.com/#" target="_blank">
                 <div class="article-box">
                     <h3 class="article-title">Reversi AI</h3>
                     <p class="article-preview">

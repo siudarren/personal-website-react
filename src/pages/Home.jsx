@@ -22,7 +22,7 @@ function Home() {
                             <li>
                                 <p>
                                     <a
-                                        href="https://reversi-ai-f1768870ea36.herokuapp.com"
+                                        href="https://reversi.darrensiu.com"
                                         className="home_project_title"
                                         target="_blank">
                                         An online Reversi AI made to clear Clubhouse Games: 51 Worldwide Classics on
