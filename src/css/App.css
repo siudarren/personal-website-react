@@ -5,11 +5,12 @@
     --background-color: #ffeee0;
     --background-color2: #ffeee0;
     --hover-color: #80624a;
-    --button-hover-color: #80624a;
+    --button-hover-color: #b98e6b;
     --gray: #ccbfb4;
     --word-color: black;
     --word-color2: black;
     --opensans: "Open Sans", sans-serif;
+    --button-border-color: black;
 }
 
 /* Dark theme */
@@ -24,6 +25,7 @@
     --word-color: rgb(160, 160, 160);
     --word-color2: #ffc494;
     --opensans: "Open Sans", sans-serif;
+    --button-font-color: black;
 }
 
 * {
@@ -74,7 +76,6 @@ p {
 .body {
     margin-top: 2rem;
 }
-
 
 @media (min-width: 1500px) {
     .background {

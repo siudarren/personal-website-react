@@ -76,8 +76,9 @@ i:hover {
     margin: 0 auto;
     background-color: var(--button-color);
     border-radius: 5px;
+    color: var(--button-font-color);
     padding: 0.1rem 0.3rem;
-    color: black;
+    /* color: black; */
 }
 
 .view_all:hover {
