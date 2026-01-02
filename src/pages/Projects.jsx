@@ -9,10 +9,14 @@ function Projects() {
                 <div class="article-box">
                     <h3 class="article-title">Afterstate DQN 2048 AI</h3>
                     <p class="article-preview">
-                        A web-hosted 2048 clone enhanced with reinforcement learning. The backend uses a PyTorch
-                        Afterstate DQN model served through FastAPI, while the frontend is a React app handling
-                        gameplay, animation states, and AI move execution. Includes valid move detection, scoring,
-                        auto-play, and deployment to Heroku.
+                        The AI is powered by an Afterstate Deep Q-Learning model with state-augmentation (board
+                        flips/rotations) to improve generalization and stability. The neural network uses a
+                        convolutional architecture (two convolutional layers followed by fully connected layers) to
+                        learn spatial tile patterns and value estimates. After training for 100,000+ episodes, the agent
+                        consistently reaches 2048 in ~70% of games and 4096 in ~10%. The backend runs a PyTorch
+                        Afterstate DQN agent served through FastAPI, while the frontend is built with React, handling
+                        animations, move logic, scoring, and an AI auto-play mode. The project supports valid move
+                        detection, smooth gameplay, and is fully deployed on Heroku.
                     </p>
                 </div>
             </a>
