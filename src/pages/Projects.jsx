@@ -5,6 +5,17 @@ function Projects() {
     return (
         <div class="body">
             <h2 class="page_heading">Projects</h2>
+            <a href="https://dqn-2048-5ecfcc85b4f4.herokuapp.com" target="_blank">
+                <div class="article-box">
+                    <h3 class="article-title">Afterstate DQN 2048 AI</h3>
+                    <p class="article-preview">
+                        A web-hosted 2048 clone enhanced with reinforcement learning. The backend uses a PyTorch
+                        Afterstate DQN model served through FastAPI, while the frontend is a React app handling
+                        gameplay, animation states, and AI move execution. Includes valid move detection, scoring,
+                        auto-play, and deployment to Heroku.
+                    </p>
+                </div>
+            </a>
             <a href="https://vanishing-tic-tac-toe.darrensiu.com/#" target="_blank">
                 <div class="article-box">
                     <h3 class="article-title">Vanishing Tic Tac Toe</h3>

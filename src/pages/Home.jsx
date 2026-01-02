@@ -21,6 +21,13 @@ function Home() {
                         <ul>
                             <li>
                                 <p>
+                                    <a href="https://2048.darrensiu.com" className="home_project_title" target="_blank">
+                                        Afterstate DQN 2048 AI
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
                                     <a
                                         href="https://reversi.darrensiu.com"
                                         className="home_project_title"
@@ -30,7 +37,7 @@ function Home() {
                                     </a>
                                 </p>
                             </li>
-                            <li>
+                            {/* <li>
                                 <p>
                                     <a
                                         href="https://cube.darrensiu.com/#"
@@ -39,7 +46,7 @@ function Home() {
                                         A Rubik's Cube simulator designed to facilitate learning speed cubing
                                     </a>
                                 </p>
-                            </li>
+                            </li> */}
                         </ul>
 
                         <Link to="/projects" className="view_all">
