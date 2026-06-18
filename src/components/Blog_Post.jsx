@@ -19,7 +19,7 @@ function Blog_Post({slug}) {
 
             try {
                 // Fetching the article from the server assuming the files are served from a public or dist directory
-                const response = await fetch(`/blog_posts/${slug}.html`);
+                const response = await fetch(`${import.meta.env.BASE_URL}blog_posts/${slug}.html`);
 
                 // Error handling if the fetch operation fails (e.g., response not OK)
                 if (!response.ok) {
