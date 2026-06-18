@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Decode SPA redirect from 404.html for GitHub Pages routing -->
+        <script>
+            (function (l) {
+                if (l.search[1] === "/") {
+                    var decoded = l.search
+                        .slice(1)
+                        .split("&")
+                        .map(function (s) {
+                            return s.replace(/~and~/g, "&");
+                        });
+                    window.history.replaceState(
+                        null,
+                        null,
+                        l.pathname.slice(0, -1) + decoded[0] + (decoded[1] || "") + l.hash
+                    );
+                }
+            })(window.location);
+        </script>
+
+        <!-- Title of the website -->
+        <title>Darren Siu</title>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-N729BR6ZKZ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-N729BR6ZKZ");
+        </script>
+
+        <!-- Description of the website -->
+        <meta name="description" content="A personal website of Darren Siu (蕭文正)." />
+
+        <!-- Download the fonts (Open Sans) from google fonts  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet" />
+
+        <!-- Download favicons of different sizes from public -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/personal-website-react/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/personal-website-react/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/personal-website-react/favicon-16x16.png" />
+        <link rel="manifest" href="/personal-website-react/site.webmanifest" />
+        <link rel="mask-icon" href="/personal-website-react/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css"
+            integrity="sha384-..."
+            crossorigin="anonymous" />
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"
+            integrity="sha384-..."
+            crossorigin="anonymous"></script>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"
+            integrity="sha384-..."
+            crossorigin="anonymous"></script>
+      <script type="module" crossorigin src="/personal-website-react/assets/index-3SYga7pV.js"></script>
+      <link rel="stylesheet" crossorigin href="/personal-website-react/assets/index-HVgeSVgy.css">
+    </head>
+    <body>
+        <!-- Create the root of the webpage -->
+        <div id="root"></div>
+
+        <!-- Connect to the main.jsx -->
+        <!-- Start the page -->
+
+        <!-- Download the icons for linkedin, github, and etc. -->
+        <script src="https://kit.fontawesome.com/6015063884.js" crossorigin="anonymous"></script>
+    </body>
+</html>

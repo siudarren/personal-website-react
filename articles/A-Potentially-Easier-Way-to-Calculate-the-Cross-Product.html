@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            img {
+                width: 10rem;
+            }
+
+            .img-container {
+                background-color: var(--background-color2);
+                padding: 1rem;
+            }
+
+            .caption {
+                font-weight: bold;
+                text-align: center;
+            }
+            .math-container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 2rem;
+                padding-right: 5rem;
+            }
+
+            .math-container.determinant {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 0 auto;
+                gap: 1rem;
+                width: min-content;
+                padding-right: 0rem;
+                padding-left: 10rem;
+            }
+
+            .item1 {
+                margin: 0 0 0 auto;
+            }
+            .item3 {
+                grid-column: 2/3;
+            }
+
+            .math-container.determinant math {
+                display: flex;
+                align-items: start;
+            }
+        </style>
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <h2 class="article_title">A Potentially Easier Way to Calculate the Cross Product</h2>
+        <h3 class="date">August 26th, 2024</h3>
+
+        <h3 class="reading_time">Reading time: 3 minutes</h3>
+
+        <div class="content">
+            <p>
+                I have to admit that the title is a bit of clickbait, as there isn't truly a 'better' way to approach
+                mathematics. However, I still want to highlight an interesting aspect of how mathematical methods can
+                vary across different regions.
+            </p>
+            <p>
+                One of the first things I noticed after arriving in the United States for college was how people write
+                and calculate math differently. Due to variations in language, it is normal for people to write
+                mathematical expressions in different orders. For example, when writing fractions, English speakers
+                always write the numerator first, followed by the denominator. This is because in English,&nbsp;
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mfrac>
+                        <mn>2</mn>
+                        <mn>3</mn>
+                    </mfrac>
+                </math>
+                &nbsp;is read as 'two over three,' so it is logical for them to do so. Conversely, Chinese speakers read
+                it as 'three dividing the two', where the denominator precedes the numerator, leading them to write it
+                accordingly.
+            </p>
+            <p>
+                I initially thought the difference in mathematical notation would be limited to elementary math and
+                basic expressions, but I soon realized that even in higher-level college mathematics, people not only
+                continue to write math differently but also calculate it differently.
+            </p>
+            <p>
+                When I took multivariable calculus as a freshman, I noticed that my American peers and professors
+                calculated three-dimensional cross products by writing out a matrix. The first row contained the i, j,
+                and k axes, the second row the first vector, and the third row the second vector.
+            </p>
+            <div class="math-container">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mrow>
+                        <mo stretchy="true">[</mo>
+                        <mtable>
+                            <mtr>
+                                <mtd><mi>i</mi></mtd>
+                                <mtd><mi>j</mi></mtd>
+                                <mtd><mi>k</mi></mtd>
+                            </mtr>
+                            <mtr>
+                                <mtd><mi>a</mi></mtd>
+                                <mtd><mi>b</mi></mtd>
+                                <mtd><mi>c</mi></mtd>
+                            </mtr>
+                            <mtr>
+                                <mtd><mi>d</mi></mtd>
+                                <mtd><mi>e</mi></mtd>
+                                <mtd><mi>f</mi></mtd>
+                            </mtr>
+                        </mtable>
+                        <mo stretchy="true">]</mo>
+                    </mrow>
+                </math>
+            </div>
+            <p class="caption">
+                The matrix representation of
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mrow>
+                        <mo>(</mo>
+                        <mi>a</mi>
+                        <mo>,</mo>
+                        <mi>b</mi>
+                        <mo>,</mo>
+                        <mi>c</mi>
+                        <mo>)</mo>
+                        <mo>&#x00D7;</mo>
+                        <!-- Cross product symbol -->
+                        <mo>(</mo>
+                        <mi>d</mi>
+                        <mo>,</mo>
+                        <mi>e</mi>
+                        <mo>,</mo>
+                        <mi>f</mi>
+                        <mo>)</mo>
+                    </mrow>
+                </math>
+                .
+            </p>
+            <p>
+                Afterward, they compute the determinant of the matrix to obtain the cross product. (How people calculate
+                determinants in different ways is also an interesting topic, but it's not our focus today, so I must
+                regrettably skip it.)
+            </p>
+
+            <div class="math-container determinant">
+                <math xmlns="http://www.w3.org/1998/Math/MathML" class="item1">
+                    <mo>|</mo>
+                    <mtable>
+                        <mtr>
+                            <mtd><mi>i</mi></mtd>
+                            <mtd><mi>j</mi></mtd>
+                            <mtd><mi>k</mi></mtd>
+                        </mtr>
+                        <mtr>
+                            <mtd><mi>a</mi></mtd>
+                            <mtd><mi>b</mi></mtd>
+                            <mtd><mi>c</mi></mtd>
+                        </mtr>
+                        <mtr>
+                            <mtd><mi>d</mi></mtd>
+                            <mtd><mi>e</mi></mtd>
+                            <mtd><mi>f</mi></mtd>
+                        </mtr>
+                    </mtable>
+                    <mo>|</mo>
+                </math>
+
+                <math xmlns="http://www.w3.org/1998/Math/MathML" class="item2">
+                    <mrow>
+                        <mo>=</mo>
+                        <mi>i</mi>
+                        <mo>|</mo>
+                        <mrow>
+                            <mtable>
+                                <mtr>
+                                    <mtd><mi>b</mi></mtd>
+                                    <mtd><mi>c</mi></mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd><mi>e</mi></mtd>
+                                    <mtd><mi>f</mi></mtd>
+                                </mtr>
+                            </mtable>
+                        </mrow>
+                        <mo>|</mo>
+                        <mo>+</mo>
+                        <mi>j</mi>
+                        <mo>|</mo>
+                        <mrow>
+                            <mtable>
+                                <mtr>
+                                    <mtd><mi>a</mi></mtd>
+                                    <mtd><mi>c</mi></mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd><mi>d</mi></mtd>
+                                    <mtd><mi>f</mi></mtd>
+                                </mtr>
+                            </mtable>
+                        </mrow>
+                        <mo>|</mo>
+                        <mo>+</mo>
+                        <mi>k</mi>
+                        <mo>|</mo>
+                        <mrow>
+                            <mtable>
+                                <mtr>
+                                    <mtd><mi>a</mi></mtd>
+                                    <mtd><mi>b</mi></mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd><mi>d</mi></mtd>
+                                    <mtd><mi>e</mi></mtd>
+                                </mtr>
+                            </mtable>
+                        </mrow>
+                        <mo>|</mo>
+                    </mrow>
+                </math>
+
+                <math xmlns="http://www.w3.org/1998/Math/MathML" class="item3">
+                    <mrow>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo>(</mo>
+                            <mi>b</mi>
+                            <mi>f</mi>
+                            <mo>-</mo>
+                            <mi>c</mi>
+                            <mi>e</mi>
+                            <mo>)</mo>
+                            <mi>i</mi>
+                        </mrow>
+                        <mo>+</mo>
+                        <mrow>
+                            <mo>(</mo>
+                            <mi>a</mi>
+                            <mi>f</mi>
+                            <mo>-</mo>
+                            <mi>c</mi>
+                            <mi>d</mi>
+                            <mo>)</mo>
+                            <mi>j</mi>
+                        </mrow>
+                        <mo>+</mo>
+                        <mrow>
+                            <mo>(</mo>
+                            <mi>a</mi>
+                            <mi>e</mi>
+                            <mo>-</mo>
+                            <mi>b</mi>
+                            <mi>d</mi>
+                            <mo>)</mo>
+                            <mi>k</mi>
+                        </mrow>
+                    </mrow>
+                </math>
+            </div>
+            <p class="caption">The determinant of the matrix.</p>
+
+            <p>
+                On the other hand, in Asia, or at least in Taiwan, we don’t calculate the cross product as the
+                determinant of a matrix. Instead, we write out the vector, starting with the second term, like this:
+            </p>
+
+            <div class="math-container">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mtable>
+                        <mtr>
+                            <mtd><mi>b</mi></mtd>
+                            <mtd><mi>c</mi></mtd>
+                            <mtd><mi>a</mi></mtd>
+                            <mtd><mi>b</mi></mtd>
+                        </mtr>
+                        <mtr>
+                            <mtd><mi>e</mi></mtd>
+                            <mtd><mi>f</mi></mtd>
+                            <mtd><mi>d</mi></mtd>
+                            <mtd><mi>e</mi></mtd>
+                        </mtr>
+                    </mtable>
+                </math>
+                <p class="caption">
+                    The other representation of
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                            <mo>(</mo>
+                            <mi>a</mi>
+                            <mo>,</mo>
+                            <mi>b</mi>
+                            <mo>,</mo>
+                            <mi>c</mi>
+                            <mo>)</mo>
+                            <!-- Cross product symbol -->
+                            <mo>&#x00D7;</mo>
+                            <mo>(</mo>
+                            <mi>d</mi>
+                            <mo>,</mo>
+                            <mi>e</mi>
+                            <mo>,</mo>
+                            <mi>f</mi>
+                            <mo>)</mo>
+                        </mrow>
+                    </math>
+                    .
+                </p>
+            </div>
+
+            <p>
+                Next, we calculate the cross product of adjacent numbers as if each group forms a two-dimensional
+                matrix.
+            </p>
+            <div class="math-container">
+                <div class="img-container">
+                    <img src="/images/taiwan_crossproduct.png" alt="The Taiwanese way to calculate cross product" />
+                </div>
+
+                <p class="caption">Each cross is a cross product</p>
+            </div>
+
+            <p>
+                For each two-dimensional cross product we calculate, it will, surprisingly—or perhaps not—correspond to
+                each coordinate of the cross product vector.
+            </p>
+
+            <p>
+                The two different methods, if examined closely, are essentially the same calculations. It's just that
+                the Taiwanese method requires writing a lot less and does not require knowledge of 3D determinants. On
+                the other hand, the American method highlights the connection between the cross product and matrices,
+                which is a useful intuition when learning higher-level linear algebra and physics.
+            </p>
+            <p>
+                In my opinion, the difference may stem from the fact that in Taiwan, we are required to learn all the
+                'fancy' mathematical methods needed in physics early in high school, long before linear algebra is
+                taught. Furthermore, it is no secret that in Asia, being good and fast at test-taking is more important
+                than understanding the knowledge itself. Therefore, a faster but less intuitive method is chosen for
+                teaching.
+            </p>
+        </div>
+    </body>
+</html>
