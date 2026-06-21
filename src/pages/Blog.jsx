@@ -6,6 +6,17 @@ function Blog() {
     return (
         <div class="body article_list">
             <h2 class="page_heading">Blog Posts</h2>
+            <Link to="/blog/Irrational-Dreams-Come-True">
+                <div className="article-box">
+                    <div className="article-box-head">
+                        <h3 className="article-title">Irrational Dreams Come True</h3>
+                        <h4 className="date-and-read-time">June 21st, 2026 | 7 minute read</h4>
+                    </div>
+                    <p className="article-preview">
+                        In the summer of 2009, when I was eight years old, my parents signed me up for a 21-day trip to Orlando, Florida, with about 20 other kids from my school. The oldest kid on the trip was only eleven.
+                    </p>
+                </div>
+            </Link>
             <Link to="/blog/Epiphany-522">
                 <div className="article-box">
                     <div className="article-box-head">

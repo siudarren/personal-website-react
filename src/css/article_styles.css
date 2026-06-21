@@ -40,3 +40,32 @@
 math {
     color: var(--word-color);
 }
+
+.content figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.content figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content .figure-row {
+    display: flex;
+    gap: 1em;
+    margin: 2rem 0;
+}
+
+.content .figure-row figure {
+    flex: 1;
+    margin: 0;
+    min-width: 0;
+}
+
+.content figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    opacity: 0.8;
+}
