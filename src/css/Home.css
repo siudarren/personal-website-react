@@ -11,6 +11,10 @@
     display: flex;
 }
 
+.profile_box picture {
+    display: contents;
+}
+
 ul {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;

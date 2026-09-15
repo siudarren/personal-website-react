@@ -10,6 +10,7 @@ import Blog from "/src/pages/Blog";
 import "/src/css/App.css";
 import usePageTracking from "./usePageTracking";
 import useContentPrefetch from "./useContentPrefetch";
+import useScrollRestoration from "./useScrollRestoration";
 
 // The jsx that puts every components of the website together
 // Top-level: only one Router
@@ -25,6 +26,7 @@ function App() {
 function AppRoutes() {
     usePageTracking();
     useContentPrefetch();
+    useScrollRestoration();
 
     return (
         <div className="background">

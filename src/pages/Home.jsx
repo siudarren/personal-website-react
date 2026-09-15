@@ -96,11 +96,21 @@ function Home() {
                     </div>
 
                     <div className="profile_box">
-                        <img
-                            src="/profile_pic.png"
-                            alt="A Picture of Darren Siu in front of the SF City Hall"
-                            className="profile_pic"
-                        />
+                        <picture>
+                            <source
+                                type="image/webp"
+                                srcSet="/images/optimized/profile-480.webp 480w, /images/optimized/profile-960.webp 960w, /images/optimized/profile-1440.webp 1440w"
+                                sizes="(min-width: 1500px) 400px, (max-width: 600px) 72vw, (max-width: 1100px) 32vw, (max-width: 1200px) 320px, 23.04vw"
+                            />
+                            <img
+                                src="/profile_pic.png"
+                                width="3024"
+                                height="4032"
+                                loading="eager"
+                                alt="A Picture of Darren Siu in front of the SF City Hall"
+                                className="profile_pic"
+                            />
+                        </picture>
                     </div>
                     <div className="icons">
                         <a href="https://www.linkedin.com/in/darren-siu" target="_blank">

@@ -45,7 +45,7 @@ export default function ContentPage() {
                     <button type="button" onClick={() => setAttempt((value) => value + 1)}>Try again</button>
                 </div>
             )}
-            <div aria-busy={loading} dangerouslySetInnerHTML={{__html: content || ""}} />
+            <div data-content-loading={loading} aria-busy={loading} dangerouslySetInnerHTML={{__html: content || ""}} />
             <Link to={backTo}>
                 <h3 className="back end_back">{backLabel}</h3>
             </Link>
