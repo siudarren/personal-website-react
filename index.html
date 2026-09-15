@@ -23,6 +23,20 @@
             })(window.location);
         </script>
 
+        <!-- Start a directly opened article request before the React bundle loads. -->
+        <script>
+            (function () {
+                var match = window.location.pathname.match(/^\/(article|blog)\/([a-zA-Z0-9_-]+)\/?$/i);
+                if (!match) return;
+                var preload = document.createElement("link");
+                preload.rel = "preload";
+                preload.as = "fetch";
+                preload.crossOrigin = "anonymous";
+                preload.href = "/" + (match[1].toLowerCase() === "article" ? "articles" : "blog_posts") + "/" + match[2] + ".html";
+                document.head.appendChild(preload);
+            })();
+        </script>
+
         <!-- Title of the website -->
         <title>Darren Siu</title>
 
@@ -69,7 +83,7 @@
             defer
             src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"
             crossorigin="anonymous"></script>
-      <script type="module" crossorigin src="/assets/index-9Gy6aucv.js"></script>
+      <script type="module" crossorigin src="/assets/index-B_-MT4fC.js"></script>
       <link rel="stylesheet" crossorigin href="/assets/index-Bv62r-pJ.css">
     </head>
     <body>
